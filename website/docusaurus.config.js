@@ -9,7 +9,7 @@ const copyrightOwner = 'FINOS'
 
 module.exports = {
   title: `FINOS ${projectName}`,
-  tagline: `FINOS ${projectName}`, 
+  tagline: `AUTOMATE, ORCHESTRATE and ACCELERATE`, 
   url: 'https://finos.org',
   baseUrl: '/',
   trailingSlash: false,
@@ -21,17 +21,38 @@ module.exports = {
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   stylesheets: ['https://fonts.googleapis.com/css?family=Overpass:400,400i,700'],
+  headTags: [
+    { tagName: 'link', attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" } },
+    { tagName: 'link', attributes: { rel: "preconnect", href: "https://fonts.gstatic.com" } },
+    { tagName: 'link', attributes: { href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap", rel: "stylesheet" } }
+  ],
   themeConfig: {
     navbar: {
-      title: `FINOS ${projectName}`,
       logo: {
-        alt: 'FINOS Logo',
-        src: 'img/favicon/favicon-finos.ico',
+        alt: 'Flowave Logo',
+        src: 'img/flowave/flowave-icon-color.png',
+        height: 100,
+        width: 100,
       },
       items: [
         {
-          href: 'https://github.com/finos/flowave-website',
-          label: 'GitHub',
+          label: 'PROJECT',
+          to: 'https://flowave.finos.org/<PAGE>',
+          position: 'right',
+        },
+        {
+          label: 'RESOURCES',
+          to: 'https://flowave.finos.org/<PAGE>',
+          position: 'right',
+        },
+        {
+          label: 'COMMUNITY',
+          to: 'https://flowave.finos.org/<PAGE>',
+          position: 'right',
+        },
+        {
+          label: 'ABOUT US',
+          to: 'https://flowave.finos.org/<PAGE>',
           position: 'right',
         }
       ],
@@ -51,41 +72,95 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} ${projectName} - ${copyrightOwner}`,
       logo: {
         alt: 'FINOS Logo',
-        src: 'img/favicon/favicon-finos.ico',
+        src: 'img/finos/finos-white.png',
         href: 'https://finos.org'
       },
       links: [
         {
-          title: 'FINOS',
+          title: 'PROJECT',
           items: [
             {
-              label: 'FINOS Website',
-              to: 'https://www.finos.org/',
+              label: 'Introduction to Flowave',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             },
             {
-              label: 'Community Handbook',
-              to: 'https://community.finos.org/',
+              label: 'Getting Started',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             },
             {
-              label: 'FINOS Projects',
-              to: 'https://landscape.finos.org',
+              label: 'Governance',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Roadmap',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             }
           ]
         },
         {
-          title: 'About FINOS',
+          title: 'COMMUNITY',
           items: [
             {
-              label: 'FINOS Projects on GitHub',
-              to: 'https://github.com/finos',
+              label: 'Ways to contribute',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             },
             {
-              label: 'Engage the FINOS Community',
-              to: 'https://www.finos.org/engage-with-our-community',
+              label: 'Join the conversation',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             },
             {
-              label: 'FINOS News and Events',
-              to: 'https://www.finos.org/news-and-events',
+              label: 'Standards',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Blog and News',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            }
+          ]
+        },
+        {
+          title: 'RESOURCES',
+          items: [
+            {
+              label: 'Documentation',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Releases',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'FINOS Materials',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'How to contribute',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Migration guides/tool',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            }
+          ]
+        },
+        {
+          title: 'ABOUT US',
+          items: [
+            {
+              label: 'Lead Maintainers',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'FINOS Liason',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Support',
+              to: 'https://www.flowave.finos.org/<PAGE>'
+            },
+            {
+              label: 'Contact Us',
+              to: 'https://www.flowave.finos.org/<PAGE>'
             }
           ]
         },

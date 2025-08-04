@@ -2,60 +2,31 @@ import React from 'react';
 
 export const features = [
     {
-        title: <>Feature 1</>,
-        imageUrl: '/img/finos/finos-blue.png',
+        title: <>MODELER</>,
+        imageUrl: '/img/flowave/modeler-icon.png',
         description: (
-            <>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</>
+            <>Create & deploy business process models</>
         ),
-        about: {
-            title: <>Placeholder Link</>,
-            link: 'docs'
-        },        
-        project: {
-            title: '',
-            link: ''
-        },        
-        involved: {
-            title: '',
-            link: ''
-        }  
     },
     {
-        title: <>Feature 2</>,
-        imageUrl: '/img/finos/finos-blue.png',
+        title: <>CORE ENGINE</>,
+        imageUrl: '/img/flowave/core-engine-icon.png',
         description: (
-            <>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</>
+            <>Execute end-to-end processes in BPMN and DMN Engine</>
         ),
-        about: {
-            title: <>Placeholder Link</>,
-            link: 'docs'
-        },                
-        project: {
-            title: '',
-            link: ''
-        },        
-        involved: {
-            title: '',
-            link: ''
-        }  
     },
     {
-        title: <>Feature 3</>,
-        imageUrl: '/img/finos/finos-blue.png',
+        title: <>API</>,
+        imageUrl: '/img/flowave/api-icon.png',
         description: (
-            <>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</>
+            <>Rich API layer for system and frontend integrations</>
         ),
-        about: {
-            title: <>Placeholder Link</>,
-            link: 'docs'
-        },                
-        project: {
-            title: '',
-            link: ''
-        },        
-        involved: {
-            title: '',
-            link: ''
-        }  
+    },
+    {
+        title: <>MONITORING</>,
+        imageUrl: '/img/flowave/monitoring-icon.png',
+        description: (
+            <>End-to-end process visibility and insights</>
+        ),
     }
 ];
