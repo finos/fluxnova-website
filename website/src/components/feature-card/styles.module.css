@@ -1,0 +1,15 @@
+.featureCard {
+  background-color: white;
+  padding: 30px;
+  border-radius: 40px;
+  width: 320px;
+  height: 320px;
+  min-width: 220px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}

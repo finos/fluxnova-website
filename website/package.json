@@ -7,7 +7,8 @@
     "start": "docusaurus start",
     "swizzle": "docusaurus swizzle",
     "build": "docusaurus build",
-    "publish-gh-pages": "docusaurus deploy"
+    "publish-gh-pages": "docusaurus deploy",
+    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css}\""
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",

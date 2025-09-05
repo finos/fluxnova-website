@@ -13,7 +13,7 @@ module.exports = {
   url: 'https://finos.org',
   baseUrl: '/',
   trailingSlash: false,
-  favicon: 'img/favicon/favicon-finos.ico',
+  favicon: 'img/favicon/flowave.ico',
   projectName: `FINOS ${projectName}`,
   organizationName: 'FINOS',
   customFields: {
@@ -37,7 +37,7 @@ module.exports = {
       items: [
         {
           label: 'PROJECT',
-          to: 'https://flowave.finos.org/<PAGE>',
+          to: '/intro',
           position: 'right',
         },
         {
@@ -52,7 +52,7 @@ module.exports = {
         },
         {
           label: 'ABOUT US',
-          to: 'https://flowave.finos.org/<PAGE>',
+          to: '/about-us',
           position: 'right',
         }
       ],

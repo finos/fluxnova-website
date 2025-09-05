@@ -21,16 +21,23 @@
 }
 
 .flowaveDescription {
-  font-size: 1.5rem;
-  width: 60%;
+  font-size: 2rem;
+  width: 70%;
   margin: auto;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1.5rem;
+  width: 50%;
 }
 
 .button {
@@ -38,24 +45,30 @@
 }
 
 .getStartedButton {
-  background-color: #00CE97;
+  background-color: #00ce97;
   border-radius: 50px;
 }
 
+.getStartedButton:hover {
+  background-color: #81ffdd;
+}
+
 .joinCommunityButton {
-  background-color: #FFFFFF;
-  color: #00CE97 !important;
-  border-color: #00CE97;
+  background-color: #ffffff;
+  color: #00ce97 !important;
+  border-color: #00ce97;
   border-radius: 50px;
   border-width: 2px;
 }
 
 .feature {
   background-color: white;
-  padding-top: 2rem;
+  padding-top: 2.3rem;
   border-radius: 40px;
   z-index: 1;
   margin: 1rem;
+  width: 320px;
+  height: 310px;
 }
 
 .features {
@@ -66,18 +79,18 @@
   margin-top: -9%;
 }
 
-.featuresCTA{
+.featuresCTA {
   text-align: center;
 }
 
-.featuresCTA ul{
+.featuresCTA ul {
   display: inline-block;
   padding: 0 20% 0 20%;
   list-style: none;
   margin-bottom: 5px;
 }
 
-.featuresCTA li::before{
+.featuresCTA li::before {
   content: "\2022";
   display: inline-block;
   width: 2em;
@@ -85,18 +98,18 @@
   color: var(--ifm-link-color);
 }
 
-.featureCTA{
+.featureCTA {
   text-align: center;
 }
 
-.featureCTA ul{
+.featureCTA ul {
   display: inline-block;
   padding: 0 10% 0 10%;
   list-style: none;
   margin-bottom: 5px;
 }
 
-.featureCTA li::before{
+.featureCTA li::before {
   content: "\2022";
   display: inline-block;
   width: 2em;
@@ -105,7 +118,7 @@
 }
 
 .featureImage {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .memberImage {
@@ -118,7 +131,7 @@
   width: 150px;
 }
 
-.row--center h2{
+.row--center h2 {
   color: #ffffff;
   font-size: 16px;
   text-align: center;
@@ -131,7 +144,11 @@
 }
 
 .members {
-  background-image: linear-gradient(to bottom, rgba(163,215,212,0.2), rgba(25,182,204,0.2));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(163, 215, 212, 0.2),
+    rgba(25, 182, 204, 0.2)
+  );
   background-repeat: no-repeat;
   background-size: cover;
   padding: 74px 0;
@@ -145,7 +162,7 @@
 .mainDescription {
   text-align: center;
   font-size: 20px;
-  width: 70%;
+  width: 62%;
   margin: auto;
   color: #606060;
   padding-bottom: 6rem;
@@ -161,4 +178,111 @@
 .navbarWhiteRectangle {
   background-color: white;
   height: 5px;
+}
+
+.heroFeature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroText {
+  width: 70%;
+  text-align: start;
+}
+
+.heroHeader {
+  color: var(--ifm-color-light);
+  font-size: 64px;
+  margin: 0 0 30px 0;
+  font-weight: bold;
+}
+
+.heroSubHeader {
+  color: #bce0ef;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.detailFeatureImage {
+  height: 120px;
+  width: 150px;
+}
+
+.detailSectionTwo {
+  background-color: var(--ifm-background-gray);
+  color: var(--ifm-text-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTwoText {
+  font-weight: bold;
+  font-size: 20px;
+  flex: 1;
+  padding: 40px 70px 0 0;
+  margin: 0 0 0 60px;
+}
+
+.sectionTwoText li {
+  margin: 0 0 35px 0;
+}
+
+.sectionTwoText.monitoring li {
+  margin: 0 0 5px 0;
+}
+
+.sectionTwoImage {
+  background-color: white;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  margin: 35px 0;
+}
+
+.sectionTwoImage img {
+  padding: 30px 30px 30px 0;
+  height: 600px;
+  width: 600px;
+}
+
+.sectionTwoImage.monitoring img {
+  padding: 30px 30px 30px 0;
+  height: 600px;
+  width: 900px;
+}
+
+.sectionThree {
+  position: relative;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 40px 50px;
+  font-weight: bold;
+}
+
+.sectionThree button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.sectionThreeText {
+  padding: 40px;
+}
+
+.sectionThreeImageWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionThreeImage {
+  background-color: var(--ifm-background-color);
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.sectionThreeImage img {
+  padding: 30px 0 30px 30px;
 }

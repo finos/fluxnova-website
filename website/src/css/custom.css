@@ -3,34 +3,65 @@
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
- */ 
+ */
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #00b5e2;
-  --ifm-color-primary-dark: #0079ac;
-  --ifm-color-primary-darker: #0072a2;
-  --ifm-color-primary-darkest: #005e86;
-  --ifm-color-primary-light: #0093d2;
-  --ifm-color-primary-lighter: #009adc;
-  --ifm-color-primary-lightest: #00aef8;
+  --ifm-color-primary: #007dff;
+  --ifm-color-dark: #2a2a2a;
+  --ifm-text-gray: #888;
+  --ifm-color-light: #bce0ef;
   --ifm-font-color-base: #606060;
-  --ifm-heading-color: #007DFF;
-  --ifm-navbar-background-color: #EFEFEF;
-  --ifm-navbar-link-color: #007DFF;
+  /*--ifm-heading-color: #007DFF;*/
+  --ifm-navbar-background-color: #efefef;
+  --ifm-navbar-link-color: #007dff;
   --ifm-navbar-shadow: 0;
-  --ifm-footer-background-color: #2A2A2A;
+  --ifm-footer-background-color: #2a2a2a;
   --ifm-footer-title-color: #ffffff;
   --ifm-footer-color: #ffffff;
   --ifm-footer-link-color: #ffffff;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Quicksand", sans-serif;
   --ifm-heading-font-family: "Quicksand", sans-serif;
-  --ifm-background-color: #EFEFEF;
+  --ifm-background-color: #f0f0f0;
+  --ifm-background-gray: #e5e5e5;
+  --ifm-button-color: #00ce97;
+  --ifm-fs-seminormal: 1em;
+  --ifm-fs-normal: 1.25em;
+  --ifm-fs-semibig: 1.5em;
+  --ifm-fs-big: 2em;
+  --ifm-fs-biggest: 2.5em;
+}
+
+h1 {
+  font-size: var(--ifm-fs-biggest);
+}
+
+h2 {
+  font-size: var(--ifm-fs-big);
+}
+
+h2.lightWeight {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: var(--ifm-fs-semibig);
+}
+
+h4 {
+  font-size: var(--ifm-fs-seminormal);
+}
+p {
+  font-size: var(--ifm-fs-normal);
+}
+
+ul {
+  font-size: var(--ifm-fs-normal);
 }
 
 .navbar__items {
-  color: #007DFF;
+  color: #007dff;
   gap: 80px;
 }
 
@@ -44,19 +75,19 @@
 }
 
 .docusaurus-highlight-code-line {
-  background-color: #0033A0;
+  background-color: #0033a0;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
 .hero.hero--primary {
-  background-color: #007DFF;
+  background-color: #007dff;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero.hero--primary img {
+.flowave-image {
   margin-bottom: 30px;
   width: 25%;
 }
@@ -65,12 +96,77 @@
   color: #ffffff;
 }
 
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007dff;
+}
+
+.cardDescription {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #606060;
+  padding: 0 10px 0 10px;
+}
+
+button {
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px 50px;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+button a {
+  color: inherit;
+}
+
+button a:hover {
+  color: inherit;
+}
+
+button.primary {
+  color: white;
+  background-color: var(--ifm-button-color);
+}
+
+button.primary:hover {
+  background-color: #00e2a5;
+}
+
+button.secondary {
+  color: var(--ifm-button-color);
+  border-color: var(--ifm-button-color);
+  background-color: white;
+}
+
+button.secondary:hover {
+  background-color: #eafff9;
+}
+
+button.tertiary {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  background-color: white;
+}
+
+button.tertiary:hover {
+  background-color: #d1e8ff;
+}
+
 .hero--subtitle {
   margin-top: -20px;
   margin-bottom: 30px;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #BCE0EF;
+  color: #bce0ef;
+}
+
+.heroDescription {
+  font-size: 1.9rem;
+  color: #bce0ef;
+  font-weight: 600;
 }
 
 .row h2 {
@@ -85,14 +181,14 @@
   color: white;
 }
 
-.row--center h2{
-  color: #29327A;
+.row--center h2 {
+  color: #29327a;
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
-  width:100%;
+  width: 100%;
 }
 
 span {
@@ -122,7 +218,7 @@ span {
 
 .footer__bottom {
   background-color: #000000;
-  color: #B8B8B8;
+  color: #b8b8b8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,8 +246,124 @@ span {
   margin-left: 25px;
 }
 
+.footer__link-item:hover {
+  text-decoration: none;
+  color: #4affcf;
+}
+
 .contact-info {
   color: #ffffff;
   font-size: 12px;
   margin-top: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+}
+
+.textContent {
+  padding: 20px;
+}
+
+.block {
+  padding: 30px 0;
+}
+
+.standard-padding {
+  padding: 40px 60px;
+}
+
+.horizontal-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal-flex.space-around {
+  justify-content: space-around;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-block {
+  display: block;
+}
+
+.bg-primary {
+  background-color: var(--ifm-color-primary);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: var(--ifm-background-gray);
+}
+
+.color-primary {
+  color: var(--ifm-color-primary);
+}
+
+.color-white {
+  color: white;
+}
+
+.color-gray {
+  color: var(--ifm-text-gray);
+}
+
+.color-black {
+  color: var(--ifm-color-dark);
+}
+
+.flex-child {
+  flex: 1;
+  min-height: 100px;
+  padding: 0 40px;
+}
+
+.text-center {
+  /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.feature-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.feature-wrapper li {
+  max-width: 300px;
+  text-wrap: wrap;
+}
+
+.feature-wrapper img {
+  max-height: 60px;
+  max-width: 60px;
+  margin: 0 15px 0 0;
+}
+
+.feature-blip {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.feature-header {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
