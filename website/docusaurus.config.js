@@ -1,9 +1,9 @@
 // Docs at https://docusaurus.io/docs
 
 // Replace 'project-blueprint' with {project name}
-const projectName = 'Flowave'
+const projectName = 'Fluxnova'
 // Replace 'project-blueprint' with {project name}
-const projectSlug = 'flowave-website'
+const projectSlug = 'fluxnova-website'
 // Replace 'FINOS' with {name of copyright owner}
 const copyrightOwner = 'FINOS'
 
@@ -13,7 +13,7 @@ module.exports = {
   url: 'https://finos.org',
   baseUrl: '/',
   trailingSlash: false,
-  favicon: 'img/favicon/flowave.ico',
+  favicon: 'img/favicon/fluxnova.ico',
   projectName: `FINOS ${projectName}`,
   organizationName: 'FINOS',
   customFields: {
@@ -29,44 +29,104 @@ module.exports = {
   themeConfig: {
     navbar: {
       logo: {
-        alt: 'Flowave Logo',
-        src: 'img/flowave/flowave-icon-color.png',
+        alt: 'Fluxnova Logo',
+        src: 'img/fluxnova/fluxnova-icon-color.png',
         height: 100,
         width: 100,
       },
       items: [
         {
+          type: 'custom-navbarDropdownItem', // use outlined here: https://stackoverflow.com/questions/69173994/docusaurus-2-how-to-add-custom-react-component-in-navbar
           label: 'PROJECT',
-          to: '/intro',
           position: 'right',
+          dropdownItems: [
+            {
+              label: 'Introduction to Fluxnova',
+              to: '/intro'
+            },
+            {
+              label: 'Getting Started',
+              to: '/getting-started'
+            },
+            {
+              label: 'Governance',
+              to: '/governance'
+            },
+            {
+              label: 'Roadmap',
+              to: '/<PAGE>'
+            },
+          ]
         },
         {
+          type: 'custom-navbarDropdownItem',
           label: 'RESOURCES',
-          to: 'https://flowave.finos.org/<PAGE>',
           position: 'right',
+          dropdownItems: [
+            {
+              label: 'Documentation',
+              to: '/docs'
+            },
+            {
+              label: 'GitHub',
+              to: '/<PAGE>'
+            },
+            {
+              label: 'Migration',
+              to: '/migration'
+            },
+            {
+              label: 'FAQs',
+              to: '/faqs'
+            },
+          ]
         },
         {
+          type: 'custom-navbarDropdownItem',
           label: 'COMMUNITY',
-          to: 'https://flowave.finos.org/<PAGE>',
           position: 'right',
+          dropdownItems: [
+            {
+              label: 'Ways to Contribute',
+              to: '/<PAGE>'
+            },
+            {
+              label: 'Join the Conversation',
+              to: '/<PAGE>'
+            },
+          ]
         },
         {
+          type: 'custom-navbarDropdownItem',
           label: 'ABOUT US',
-          to: '/about-us',
           position: 'right',
+          dropdownItems: [
+            {
+              label: 'Lead Maintainers',
+              to: '/about-us'
+            },
+            {
+              label: 'Support',
+              to: '/<PAGE>'
+            },
+            {
+              label: 'Contact',
+              to: '/<PAGE>'
+            },
+          ]
         }
       ],
     },
     metadata: [
-      {name: 'description', content: 'FINOS Flowave Website.'},
-      {property: 'og:title', content: 'FINOS Flowave Website'},
-      {property: 'og:description', content: 'FINOS Flowave Website.'},
-      {property: 'og:image', content: 'https://raw.githubusercontent.com/finos/flowave-website/main/website/static/img/feature/feature-img.png'},
-      {property: 'og:url', content: 'https:/flowave.finos.org/'},
+      {name: 'description', content: 'FINOS Fluxnova Website.'},
+      {property: 'og:title', content: 'FINOS Fluxnova Website'},
+      {property: 'og:description', content: 'FINOS Fluxnova Website.'},
+      {property: 'og:image', content: 'https://raw.githubusercontent.com/finos/fluxnova-website/main/website/static/img/feature/feature-img.png'},
+      {property: 'og:url', content: 'https:/fluxnova.finos.org/'},
       {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'FINOS Flowave Website'},
-      {name: 'twitter:description', content: 'FINOS Flowave Homepage.'},
-      {name: 'twitter:image', content: 'https://raw.githubusercontent.com/finos/flowave-website/main/website/static/img/feature/feature-img.png'},
+      {name: 'twitter:title', content: 'FINOS Fluxnova Website'},
+      {name: 'twitter:description', content: 'FINOS Fluxnova Homepage.'},
+      {name: 'twitter:image', content: 'https://raw.githubusercontent.com/finos/fluxnova-website/main/website/static/img/feature/feature-img.png'},
     ],
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} ${projectName} - ${copyrightOwner}`,
@@ -80,20 +140,20 @@ module.exports = {
           title: 'PROJECT',
           items: [
             {
-              label: 'Introduction to Flowave',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              label: 'Introduction to Fluxnova',
+              to: 'https://www.fluxnova.finos.org/intro'
             },
             {
               label: 'Getting Started',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
             {
               label: 'Governance',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/governance'
             },
             {
               label: 'Roadmap',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/roadmap'
             }
           ]
         },
@@ -102,20 +162,12 @@ module.exports = {
           items: [
             {
               label: 'Ways to contribute',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
             {
               label: 'Join the conversation',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
-            {
-              label: 'Standards',
-              to: 'https://www.flowave.finos.org/<PAGE>'
-            },
-            {
-              label: 'Blog and News',
-              to: 'https://www.flowave.finos.org/<PAGE>'
-            }
           ]
         },
         {
@@ -123,23 +175,23 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
+            // {
+            //   label: 'Releases',
+            //   to: 'https://www.fluxnova.finos.org/<PAGE>'
+            // },
             {
-              label: 'Releases',
-              to: 'https://www.flowave.finos.org/<PAGE>'
-            },
-            {
-              label: 'FINOS Materials',
-              to: 'https://www.flowave.finos.org/<PAGE>'
-            },
-            {
-              label: 'How to contribute',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              label: 'GitHub',
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
             {
               label: 'Migration guides/tool',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/migration'
+            },
+            {
+              label: 'FAQs',
+              to: 'https://www.fluxnova.finos.org/faqs'
             }
           ]
         },
@@ -148,32 +200,29 @@ module.exports = {
           items: [
             {
               label: 'Lead Maintainers',
-              to: 'https://www.flowave.finos.org/<PAGE>'
-            },
-            {
-              label: 'FINOS Liason',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
             {
               label: 'Support',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             },
             {
               label: 'Contact Us',
-              to: 'https://www.flowave.finos.org/<PAGE>'
+              to: 'https://www.fluxnova.finos.org/<PAGE>'
             }
           ]
         },
       ]
     },
   },
+  plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         }
       }
     ]

@@ -1,13 +1,13 @@
 [![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://community.finos.org/docs/governance/Software-Projects/stages/incubating)
 
-# Flowave Website
+# Fluxnova Website
 
 ## Contributing
-For any questions, bugs or feature requests please open an [issue](https://github.com/finos/flowave-website/issues)
+For any questions, bugs or feature requests please open an [issue](https://github.com/finos/fluxnova-website/issues)
 For anything else please send an email to {project mailing list}.
 
 To submit a contribution:
-1. Fork it (<https://github.com/finos/flowave-website/fork>)
+1. Fork it (<https://github.com/finos/fluxnova-website/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Read our [contribution guidelines](.github/CONTRIBUTING.md) and [Community Code of Conduct](https://www.finos.org/code-of-conduct)
 4. Commit your changes (`git commit -am 'Add some fooBar'`)

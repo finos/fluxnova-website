@@ -13,7 +13,7 @@ export default function Intro() {
       <TextBlock config={pageConfig.sectionThree} />
       <TextBlock config={pageConfig.sectionFour} />
       <div className="block bg-white">
-        <h2 className="standard-padding">Flowave Capabilities</h2>
+        <h2 className="standard-padding">Fluxnova Capabilities</h2>
         <div className="feature-wrapper">
           {pageConfig.sectionFive.elements.map((feature, index) => (
             <div className="feature-blip" key={index}>

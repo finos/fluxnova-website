@@ -2,7 +2,7 @@ import classnames from "classnames";
 import React from "react";
 
 export const HomeConfig = {
-  // TODO: include all home page config here, not just buttons
+  // TODO: pull all of the home config from here, not just buttons
   buttons: [
     {
       name: <>Get Started</>,

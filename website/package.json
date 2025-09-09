@@ -8,16 +8,18 @@
     "swizzle": "docusaurus swizzle",
     "build": "docusaurus build",
     "publish-gh-pages": "docusaurus deploy",
-    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css}\""
+    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}\""
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/preset-classic": "^3.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-sass": "^0.2.6",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.92.1"
   },
   "devDependencies": {
     "eslint": "^9.0.0",

@@ -11,7 +11,7 @@ export const AboutUsConfig = {
       side: "right",
     },
     elements: [
-      <h2 class="lightWeight">
+      <h2 className="lightWeight">
         <strong>ABOUT US - </strong> Lorem ipsum dol or sit amet consectetur.
         Fermentum sit faucibus turpis quam lectus nunc eu eu leo. At non cursus
         ultrices metus non magnis mauris malesuada tempus.

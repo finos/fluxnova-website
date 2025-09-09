@@ -10,7 +10,7 @@ export const IntroConfig = {
       side: "right",
     },
     elements: [
-      <h2 class="lightWeight">
+      <h2 className="lightWeight">
         Many organisations rely on aging or proprietary process orchestration
         software that can be rigid, costly or difficult to scale and often
         results in vendor lock-in, resulting in limited flexibility, increase in
@@ -26,8 +26,8 @@ export const IntroConfig = {
     },
     elements: [
       <h2>
-        Flowave is an open-source orchestration engine developed collaboratively
-        by industry leaders to address these challenges.
+        Fluxnova is an open-source orchestration engine developed
+        collaboratively by industry leaders to address these challenges.
       </h2>,
       <p>
         It offers cloud-native, standards aligned alternatives that eliminates
@@ -40,7 +40,7 @@ export const IntroConfig = {
     className: "bg-gray color-black",
     elements: [
       <p>
-        Designed with extensibility and integration in mind, Flowave empowers
+        Designed with extensibility and integration in mind, Fluxnova empowers
         institutions to modernize their workflow architecture while actively
         participating in the evolution of the platform though the FINOS
         community.
@@ -77,7 +77,7 @@ export const IntroConfig = {
         <Link>Get Started</Link>
       </button>,
       <button className="secondary">
-        <Link>Join the Community</Link>
+        <Link>Ways to Contribute</Link>
       </button>,
     ],
   },

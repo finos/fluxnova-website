@@ -14,7 +14,7 @@ export const engineConfig = {
       <h1>
         Execute end to end workflows using a standards based process engine
       </h1>,
-      <p class="heroDescription">
+      <p className="heroDescription">
         Supports rules, user tasks and timed events, with built in support from
         human in the loops processing
       </p>,
@@ -32,15 +32,15 @@ export const engineConfig = {
       ),
     },
     elements: [
-      <h3>
-        At the heart of Flowave is a lightweight, high performance process
+      <h2>
+        At the heart of Fluxnova is a lightweight, high performance process
         engine built for modern enterprise automation.
-      </h3>,
-      <p>
-        The Flowave engine empowers teams to orchestrate people, systems and
+      </h2>,
+      <h2 className="lightWeight">
+        The Fluxnova engine empowers teams to orchestrate people, systems and
         data through clearly defined workflows, all while maintain full
         visibility and control
-      </p>,
+      </h2>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
           <Link>Get Started</Link>

@@ -12,7 +12,7 @@ export const APIsConfig = {
     },
     elements: [
       <h1>Expose and consume services via a REST api</h1>,
-      <p class="heroDescription">
+      <p className="heroDescription">
         Integrates easily with external systems, frontend UI’s, CI/CD pipelines
         and notification services
       </p>,
@@ -30,14 +30,14 @@ export const APIsConfig = {
       ),
     },
     elements: [
-      <p>
-        Flowave provides a modern, secure API layer to support seamless
+      <h2>
+        Fluxnova provides a modern, secure API layer to support seamless
         integration and operational transparency.
-      </p>,
-      <p>
-        Flowave APIs make it easy to connect business workflows to your existing
-        digital landscape, enabling true end to end automation
-      </p>,
+      </h2>,
+      <h2 className="lightWeight">
+        Fluxnova APIs make it easy to connect business workflows to your
+        existing digital landscape, enabling true end to end automation
+      </h2>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
           <Link>Get Started</Link>
@@ -48,11 +48,10 @@ export const APIsConfig = {
   sectionTwo: {
     image: {
       side: "left",
-      content: (
-        <img src="/img/feature/modeler/overview.png" alt="Modeler Overview" />
-      ),
+      content: <img src="/img/feature/APIs/CallAPIs.png" alt="API config" />,
     },
     elements: [
+      <h3>Details</h3>,
       <ul>
         <li>
           A fully documented REST API enables external systems to deploy
@@ -60,7 +59,7 @@ export const APIsConfig = {
           status
         </li>
         <li>
-          Java based SDKs allow developers to embed Flowave functionality
+          Java based SDKs allow developers to embed Fluxnova functionality
           directly into their applications or services
         </li>
         <li>

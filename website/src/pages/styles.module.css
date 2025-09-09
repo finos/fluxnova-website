@@ -20,7 +20,7 @@
   }
 }
 
-.flowaveDescription {
+.fluxnovaDescription {
   font-size: 2rem;
   width: 70%;
   margin: auto;
@@ -38,10 +38,18 @@
   justify-content: space-around;
   padding: 1.5rem;
   width: 50%;
+  @media screen and (max-width: 966px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .button {
   margin: 0 2em 0 2em;
+  @media screen and (max-width: 966px) {
+    margin: 10px 0;
+  }
 }
 
 .getStartedButton {
@@ -67,8 +75,16 @@
   border-radius: 40px;
   z-index: 1;
   margin: 1rem;
-  width: 320px;
-  height: 310px;
+  @media screen and (max-width: 966px) {
+    margin: 10px 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 .features {
@@ -76,7 +92,10 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  margin-top: -9%;
+  margin-top: -140px;
+  @media screen and (max-width: 966px) {
+    margin: 10px 0;
+  }
 }
 
 .featuresCTA {
@@ -168,7 +187,7 @@
   padding-bottom: 6rem;
 }
 
-.flowaveCapabilities {
+.fluxnovaCapabilities {
   width: 95%;
   display: block;
   margin: auto;

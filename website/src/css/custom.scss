@@ -9,13 +9,16 @@
 :root {
   --ifm-color-primary: #007dff;
   --ifm-color-dark: #2a2a2a;
+  --ifm-color-charcoal: #575757;
   --ifm-text-gray: #888;
   --ifm-color-light: #bce0ef;
   --ifm-font-color-base: #606060;
+  --ifm-transparent-primary: #a8d3ff;
   /*--ifm-heading-color: #007DFF;*/
   --ifm-navbar-background-color: #efefef;
   --ifm-navbar-link-color: #007dff;
   --ifm-navbar-shadow: 0;
+  --ifm-navbar-height: content;
   --ifm-footer-background-color: #2a2a2a;
   --ifm-footer-title-color: #ffffff;
   --ifm-footer-color: #ffffff;
@@ -33,16 +36,48 @@
   --ifm-fs-biggest: 2.5em;
 }
 
+nav {
+  padding: 0 !important;
+}
+
+.navbar__brand {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  &.mobile {
+    left: revert;
+    right: 10px;
+  }
+}
+
+.navbar-sidebar__brand {
+  .navbar__brand {
+    position: relative !important;
+    margin: 0 0 20px 0;
+  }
+}
+
+.navbar-item {
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
+
+.navbar__items--right {
+  margin-right: 20px;
+}
+
 h1 {
   font-size: var(--ifm-fs-biggest);
 }
 
 h2 {
   font-size: var(--ifm-fs-big);
-}
-
-h2.lightWeight {
-  font-weight: 400;
+  &.lightWeight {
+    font-weight: 400;
+  }
+  &.paddingTop {
+    padding-top: 25px;
+  }
 }
 
 h3 {
@@ -65,10 +100,6 @@ ul {
   gap: 80px;
 }
 
-.navbar__item {
-  font-weight: bold;
-}
-
 .navbar__logo img {
   height: 75px;
   width: 75px;
@@ -87,13 +118,22 @@ ul {
   background-size: cover;
 }
 
-.flowave-image {
+.fluxnova-image {
   margin-bottom: 30px;
-  width: 25%;
+  width: 42%;
 }
 
 .hero__title {
   color: #ffffff;
+}
+
+.lightWeight a {
+  color: #00e2a5;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 .cardTitle {
@@ -118,41 +158,41 @@ button {
   border: 2px solid transparent;
 }
 
-button a {
-  color: inherit;
-}
+button {
+  @media screen and (max-width: 966px) {
+    margin: 10px 0;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+  &.primary {
+    color: white;
+    background-color: var(--ifm-button-color);
+    &:hover {
+      background-color: #00e2a5;
+    }
+  }
 
-button a:hover {
-  color: inherit;
-}
+  &.secondary {
+    color: var(--ifm-button-color);
+    border-color: var(--ifm-button-color);
+    background-color: white;
+    &:hover {
+      background-color: #eafff9;
+    }
+  }
 
-button.primary {
-  color: white;
-  background-color: var(--ifm-button-color);
-}
-
-button.primary:hover {
-  background-color: #00e2a5;
-}
-
-button.secondary {
-  color: var(--ifm-button-color);
-  border-color: var(--ifm-button-color);
-  background-color: white;
-}
-
-button.secondary:hover {
-  background-color: #eafff9;
-}
-
-button.tertiary {
-  color: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
-  background-color: white;
-}
-
-button.tertiary:hover {
-  background-color: #d1e8ff;
+  &.tertiary {
+    color: var(--ifm-color-primary);
+    border-color: var(--ifm-color-primary);
+    background-color: white;
+    &:hover {
+      background-color: #d1e8ff;
+    }
+  }
 }
 
 .hero--subtitle {
@@ -205,7 +245,7 @@ span {
   overflow-x: hidden;
 }
 
-.footer-flowave-icon {
+.footer-fluxnova-icon {
   position: absolute;
   padding: 50px;
 }
@@ -279,6 +319,9 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 966px) {
+    flex-direction: column;
+  }
 }
 
 .horizontal-flex.space-around {
@@ -318,6 +361,10 @@ span {
 
 .color-gray {
   color: var(--ifm-text-gray);
+}
+
+.color-charcoal {
+  color: var(--ifm-color-charcoal);
 }
 
 .color-black {
@@ -366,4 +413,7 @@ span {
 .feature-header {
   font-size: 1.2rem;
   font-weight: 700;
+}
+.secondary-bullets {
+  font-size: 1rem;
 }

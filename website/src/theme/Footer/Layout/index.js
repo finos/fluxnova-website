@@ -10,8 +10,8 @@ export default function FooterLayout({ style, links, logo, copyright }) {
     >
       <div className="container-fluid">
         <img
-          className="footer-flowave-icon"
-          src="img/flowave/flowave-icon.png"
+          className="footer-fluxnova-icon"
+          src="img/fluxnova/fluxnova-icon.png"
         ></img>
         <div className="footer-resources">{links}</div>
         <div className="footer__bottom">

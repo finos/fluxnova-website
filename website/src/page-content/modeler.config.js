@@ -11,7 +11,7 @@ export const modelerConfig = {
     },
     elements: [
       <h1>Design it your way</h1>,
-      <p class="heroDescription">
+      <p className="heroDescription">
         Design and deploy business process models using BPMN and DMN standards
       </p>,
     ],
@@ -34,7 +34,7 @@ export const modelerConfig = {
       </h2>,
       <p>
         Whether you’re prototyping new workflows or refining complex
-        automations, Flowave Modeler gives you the tools to move from idea to
+        automations, Fluxnova Modeler gives you the tools to move from idea to
         execution with confidence
       </p>,
       <div style={{ textAlign: "center" }}>
@@ -85,13 +85,13 @@ export const modelerConfig = {
       <h2>Already have processes? Let's move them</h2>,
       <p>Switching engines doesn’t have to be difficult.</p>,
       <p>
-        Flowave includes a powerful migration utility tool that helps you
+        Fluxnova includes a powerful migration utility tool that helps you
         refactor existing processes, cleanly and quickly
       </p>,
       <h3>What it does:</h3>,
       <ul>
         <li>Automatically adjusts dependencies, namespaces and artifacts</li>
-        <li>Updates BPMN and config to align with Flowave standards</li>
+        <li>Updates BPMN and config to align with Fluxnova standards</li>
       </ul>,
     ],
   },

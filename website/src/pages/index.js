@@ -13,17 +13,16 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
-      <div className={styles.navbarWhiteRectangle}></div>
       <header className={classnames("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <img
-            className="flowave-image"
-            src="img/flowave/flowave-wordmark.png"
-            alt="Flowave wordmark"
+            className="fluxnova-image"
+            src="/img/Fluxnova-wordmark-Wht.svg"
+            alt="Fluxnova wordmark"
           ></img>
           <p className={classnames("hero--subtitle")}>{siteConfig.tagline}</p>
-          <p className={styles.flowaveDescription}>
-            Flowave is a modern, open source workflow orchestration engine
+          <p className={styles.fluxnovaDescription}>
+            Fluxnova is a modern, open source workflow orchestration engine
             tailored for regulated industries.
           </p>
         </div>
@@ -55,19 +54,19 @@ function Home() {
         </div>
         <div>
           <img
-            className={styles.flowaveCapabilities}
-            src="img/flowave/flowave-capabilities-icons.png"
-            alt="icons representing the capabilities of Flowave"
+            className={styles.fluxnovaCapabilities}
+            src="/img/fluxnova/fluxnova-capabilities-icons.png"
+            alt="icons representing the capabilities of Fluxnova"
           ></img>
         </div>
         <div className={styles.mainDescription}>
-          Backed by FINOS/Linux Foundation, Flowave empowers digitization
+          Backed by FINOS/Linux Foundation, Fluxnova empowers digitization
           through process orchestration, helping organizations to increase
           straight through processing(STP) by automating complex processes
           involving multiple endpoints via BPM workflows.
           <div>
-            Flowave is open source and available under Apache 2.0 OSI compliance
-            license
+            Fluxnova is open source and available under Apache 2.0 OSI
+            compliance license
           </div>
         </div>
       </main>

@@ -10,8 +10,8 @@ export const MonitoringConfig = {
     },
     elements: [
       <h1>Real-Time Visibility for Mission-Critical Processes</h1>,
-      <p class="heroDescription">
-        Flowave puts everything you need in one view. Get real-time insights,
+      <p className="heroDescription">
+        Fluxnova puts everything you need in one view. Get real-time insights,
         take actions, and keep your business-critical processes running
         smoothly—without the chaos.
       </p>,
@@ -34,7 +34,7 @@ export const MonitoringConfig = {
       <h2>Need Answers Fast? Just Click the Chart.</h2>,
       <p>
         Our intuitive dashboards show you what’s happening across your
-        operations—instantly. From incident counts to incomplete workflows,
+        operations—instantly. From incident counts to running process instances,
         explore the data visually and jump straight to the details with one
         click.
       </p>,
@@ -50,16 +50,13 @@ export const MonitoringConfig = {
     },
     elements: [
       <p>LISTS</p>,
-      <h2>Segmented Views for Faster Navigation</h2>,
+      <h2>Segmented Views</h2>,
       <p>
-        Flowave's list pages give you quick access to essential data--organized
+        Fluxnova's list pages give you quick access to essential data--organized
         by:
       </p>,
       <ul>
         <li>Process Definitions</li>
-        <li>Process Instances</li>
-        <li>Incidents</li>
-        <li>Jobs</li>
         <li>Batches</li>
         <li>Deployments</li>
         <li>Decision Definitions</li>
@@ -76,10 +73,9 @@ export const MonitoringConfig = {
       <p>DETAILS</p>,
       <h2>Smarter Monitoring Starts Here</h2>,
       <p>
-        Flowave Monitoring gives you the power to both analyze and resolve
+        Fluxnova Monitoring gives you the power to both analyze and resolve
         process issues. Identify bottlenecks and incidents at a glance with
-        intuitive process model overlays. Modify, move the token location,
-        migrate live process instances to fix issues on the fly and apply the
+        intuitive process model overlays. Fix issues on the fly and apply the
         latest improvements—no downtime required.
       </p>,
     ],
