@@ -37,7 +37,7 @@ module.exports = {
       items: [
         {
           type: 'custom-navbarDropdownItem', // use outlined here: https://stackoverflow.com/questions/69173994/docusaurus-2-how-to-add-custom-react-component-in-navbar
-          label: 'PROJECT',
+          label: 'PRODUCT',
           position: 'right',
           dropdownItems: [
             {
@@ -46,15 +46,11 @@ module.exports = {
             },
             {
               label: 'Getting Started',
-              to: '/getting-started'
+              to: 'https://docs.fluxnova.finos.org'
             },
             {
               label: 'Governance',
               to: '/governance'
-            },
-            {
-              label: 'Roadmap',
-              to: '/<PAGE>'
             },
           ]
         },
@@ -65,11 +61,11 @@ module.exports = {
           dropdownItems: [
             {
               label: 'Documentation',
-              to: '/docs'
+              to: 'https://docs.fluxnova.finos.org/'
             },
             {
               label: 'GitHub',
-              to: '/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform'
             },
             {
               label: 'Migration',
@@ -88,11 +84,11 @@ module.exports = {
           dropdownItems: [
             {
               label: 'Ways to Contribute',
-              to: '/<PAGE>'
+              to: '/contribute'
             },
             {
               label: 'Join the Conversation',
-              to: '/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform/discussions'
             },
           ]
         },
@@ -102,16 +98,12 @@ module.exports = {
           position: 'right',
           dropdownItems: [
             {
-              label: 'Lead Maintainers',
+              label: 'Who We Are',
               to: '/about-us'
             },
             {
-              label: 'Support',
-              to: '/<PAGE>'
-            },
-            {
               label: 'Contact',
-              to: '/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform/discussions'
             },
           ]
         }
@@ -137,24 +129,20 @@ module.exports = {
       },
       links: [
         {
-          title: 'PROJECT',
+          title: 'PRODUCT',
           items: [
             {
               label: 'Introduction to Fluxnova',
-              to: 'https://www.fluxnova.finos.org/intro'
+              to: '/intro'
             },
             {
               label: 'Getting Started',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: 'https://docs.fluxnova.finos.org'
             },
             {
               label: 'Governance',
-              to: 'https://www.fluxnova.finos.org/governance'
+              to: '/governance'
             },
-            {
-              label: 'Roadmap',
-              to: 'https://www.fluxnova.finos.org/roadmap'
-            }
           ]
         },
         {
@@ -162,11 +150,11 @@ module.exports = {
           items: [
             {
               label: 'Ways to contribute',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: '/contribute'
             },
             {
               label: 'Join the conversation',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform/discussions'
             },
           ]
         },
@@ -175,23 +163,19 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: 'https://docs.fluxnova.finos.org/'
             },
-            // {
-            //   label: 'Releases',
-            //   to: 'https://www.fluxnova.finos.org/<PAGE>'
-            // },
             {
               label: 'GitHub',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform'
             },
             {
-              label: 'Migration guides/tool',
-              to: 'https://www.fluxnova.finos.org/migration'
+              label: 'Migration',
+              to: '/migration'
             },
             {
               label: 'FAQs',
-              to: 'https://www.fluxnova.finos.org/faqs'
+              to: '/faqs'
             }
           ]
         },
@@ -199,16 +183,12 @@ module.exports = {
           title: 'ABOUT US',
           items: [
             {
-              label: 'Lead Maintainers',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
-            },
-            {
-              label: 'Support',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              label: 'Who We Are',
+              to: '/about-us'
             },
             {
               label: 'Contact Us',
-              to: 'https://www.fluxnova.finos.org/<PAGE>'
+              to: 'https://github.com/finos/fluxnova-bpm-platform/discussions'
             }
           ]
         },

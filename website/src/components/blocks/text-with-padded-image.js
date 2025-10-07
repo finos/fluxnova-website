@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import generateClassName from "../../utils/generate-classname";
 import getOrderedElements from "../../utils/get-ordered-elements";
 import generateElements from "../../utils/generate-elements";

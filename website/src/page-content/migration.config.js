@@ -1,7 +1,6 @@
 import QuestionIcon from "/img/icons/question.svg";
 import MigrationIcon from "/img/icons/migration.svg";
-import PeopleExchangeIcon from "/img/icons/people-exchange.svg";
-import GroupsIcon from "/img/icons/groups.svg";
+import Link from "@docusaurus/Link";
 
 export const MigrationConfig = {
   sectionOne: {
@@ -11,15 +10,15 @@ export const MigrationConfig = {
       side: "right",
     },
     elements: [
-      <h1>Why Fluxnova Migrator</h1>,
+      <h1>Why Fluxnova Migrator?</h1>,
       <h2 className="lightWeight">
         Migrating workflows between BPMN platforms is rarely straightforward.
         Different engines interpret BPMN in their own ways, so even the simplest
         models can behave differently when moved causing delays, rework and
         inconsistencies. Fluxnova Migrator removes that uncertainty. It
         automates the heavy lifting of migration, transforming your existing
-        Camunda-based workflows into Fluxnova ready projects with speed,
-        accuracy and minimal manual effort.
+        Camunda 7 Community Edition workflows into Fluxnova ready projects with
+        speed, accuracy and minimal manual effort.
       </h2>,
     ],
   },
@@ -32,6 +31,7 @@ export const MigrationConfig = {
     button: {
       text: "Learn more",
       className: "primary",
+      to: "https://github.com/finos/fluxnova-modeler/blob/develop/README.md",
     },
     elements: [
       <h2>How it works</h2>,
@@ -65,9 +65,8 @@ export const MigrationConfig = {
       </p>,
       <h3>Supported Platforms</h3>,
       <p>
-        Camunda 7 Community Edition (7.24) – migrate existing workflows directly
-        into Fluxnova. (Support for additional platforms will be added over
-        time.)
+        Camunda 7 Community Edition – migrate existing workflows directly into
+        Fluxnova. (Support for additional platforms will be added over time.)
       </p>,
     ],
   },
@@ -116,6 +115,13 @@ export const MigrationConfig = {
           automatically, keeping manual work to a minimum.
         </li>
       </ul>,
+      <h2 className="paddingTop">Ready to Start?</h2>,
+      <p>Fluxnova Migrator is available today free and open source.</p>,
+      <button className="primary">
+        <Link to="https://github.com/finos/fluxnova-modeler/blob/develop/README.md">
+          Migrate
+        </Link>
+      </button>,
     ],
   },
 };

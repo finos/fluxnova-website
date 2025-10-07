@@ -1,7 +1,7 @@
 import React from "react";
 import { useColorMode, useThemeConfig } from "@docusaurus/theme-common";
 import ColorModeToggle from "@theme/ColorModeToggle";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 export default function NavbarColorModeToggle({ className }) {
   const navbarStyle = useThemeConfig().navbar.style;
   const disabled = useThemeConfig().colorMode.disableSwitch;

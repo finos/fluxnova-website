@@ -16,7 +16,7 @@ export const engineConfig = {
       </h1>,
       <p className="heroDescription">
         Supports rules, user tasks and timed events, with built in support from
-        human in the loops processing
+        human in the loop processing
       </p>,
     ],
   },
@@ -26,7 +26,7 @@ export const engineConfig = {
       side: "right",
       content: (
         <img
-          src="/img/feature/modeler/shape-editor.png"
+          src="/img/feature/engine/shape-editor.png"
           alt="Modeler Shape Editor"
         />
       ),
@@ -43,7 +43,9 @@ export const engineConfig = {
       </h2>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
-          <Link>Get Started</Link>
+          <Link to="https://demo-fluxnova.finos.org/fluxnova/app/welcome/default/#!/login">
+            View Demo
+          </Link>
         </button>
       </div>,
     ],
@@ -52,7 +54,7 @@ export const engineConfig = {
     image: {
       side: "left",
       content: (
-        <img src="/img/feature/modeler/overview.png" alt="Modeler Overview" />
+        <img src="/img/feature/engine/overview.png" alt="Modeler Overview" />
       ),
     },
     elements: [

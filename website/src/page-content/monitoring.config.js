@@ -70,7 +70,7 @@ export const MonitoringConfig = {
       ),
     },
     elements: [
-      <p>DETAILS</p>,
+      <p>INSIGHTS</p>,
       <h2>Smarter Monitoring Starts Here</h2>,
       <p>
         Fluxnova Monitoring gives you the power to both analyze and resolve

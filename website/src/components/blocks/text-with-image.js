@@ -14,7 +14,7 @@ export default function TextWithImage({ config }) {
         {config.button && (
           <div>
             <button className={config.button.className}>
-              <Link>{config.button.text}</Link>
+              <Link to={config.button.to}>{config.button.text}</Link>
             </button>
           </div>
         )}

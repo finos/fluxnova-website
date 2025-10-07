@@ -11,10 +11,9 @@ export const GovernanceConfig = {
       side: "right",
     },
     elements: [
+      <h1>Governance</h1>,
       <h2 className="lightWeight">
-        <strong>Governance - </strong> This document describes the governance of
-        the FINOS Fluxnova project. The project is also governed by the Linux
-        Foundation{" "}
+        The product is governed by the Linux Foundation{" "}
         <a
           href="https://www.linuxfoundation.org/legal/antitrust-policy"
           target="_new"
@@ -62,14 +61,12 @@ export const GovernanceConfig = {
     elements: [
       <h2>Roles</h2>,
       <p>
-        Fluxnova is a meritocratic, consensus-based community project, in so far
-        that is possible, decision-making is done based on user consensus
-        following open discussion on our Working Groups and issue list. No major
-        decisions about the project’s direction, bug fixes, or features should
-        be made in private without community involvement and participation.
-        Discussions must begin at the earliest possible point on a topic; the
-        community’s participation is vital during the entire decision-making
-        process.
+        Fluxnova is a meritocratic, consensus-driven platform. Decisions are
+        made in public – through Working Groups and public issues after open
+        discussion and community input. No major changes to direction, features
+        or fixes are made privately. We open proposals early and keep the
+        community involved throughout the decision process, Maintainers document
+        outcomes and broad consensus.
       </p>,
     ],
   },
@@ -201,7 +198,7 @@ export const GovernanceConfig = {
           href="https://github.com/finos/fluxnova-bpm-platform/blob/main/CONTRIBUTING.md"
           target="_new"
         >
-          CONTRIBUTING.md
+          Contribution Documentation
         </a>
       </p>,
       <h3>Decision Making Process</h3>,
@@ -283,44 +280,44 @@ export const GovernanceConfig = {
           practices
         </li>
       </ul>,
-      <h3>Meeting Cadence and Chair Rotation</h3>,
-      <p>
-        Both Working Groups meet weekly and all sessions are minuted and
-        published publicly.
-      </p>,
-      <table>
-        <thead>
-          <tr>
-            <th>Period</th>
-            <th>Chair & Minutes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Q2 2025</td>
-            <td>NatWest</td>
-          </tr>
-          <tr>
-            <td>Q3 2025</td>
-            <td>Fidelity</td>
-          </tr>
-          <tr>
-            <td>Q4 2025</td>
-            <td>Deutsche</td>
-          </tr>
-          <tr>
-            <td>Q1 2026</td>
-            <td>Capital One</td>
-          </tr>
-        </tbody>
-      </table>,
-      <p>Chair Responsibilities:</p>,
-      <ul>
-        <li>Set agendas and create meeting issues in GitHub</li>
-        <li>Facilitate the call and manage time</li>
-        <li>Ensure minutes capture key decisions and assigned actions</li>
-        <li>Track action follow up and escalate risks or blockers as needed</li>
-      </ul>,
+      // <h3>Meeting Cadence and Chair Rotation</h3>,
+      // <p>
+      //   Both Working Groups meet weekly and all sessions are minuted and
+      //   published publicly.
+      // </p>,
+      // <table>
+      //   <thead>
+      //     <tr>
+      //       <th>Period</th>
+      //       <th>Chair & Minutes</th>
+      //     </tr>
+      //   </thead>
+      //   <tbody>
+      //     <tr>
+      //       <td>Q2 2025</td>
+      //       <td>NatWest</td>
+      //     </tr>
+      //     <tr>
+      //       <td>Q3 2025</td>
+      //       <td>Fidelity</td>
+      //     </tr>
+      //     <tr>
+      //       <td>Q4 2025</td>
+      //       <td>Deutsche</td>
+      //     </tr>
+      //     <tr>
+      //       <td>Q1 2026</td>
+      //       <td>Capital One</td>
+      //     </tr>
+      //   </tbody>
+      // </table>,
+      // <p>Chair Responsibilities:</p>,
+      // <ul>
+      //   <li>Set agendas and create meeting issues in GitHub</li>
+      //   <li>Facilitate the call and manage time</li>
+      //   <li>Ensure minutes capture key decisions and assigned actions</li>
+      //   <li>Track action follow up and escalate risks or blockers as needed</li>
+      // </ul>,
     ],
   },
   sectionSeven: {

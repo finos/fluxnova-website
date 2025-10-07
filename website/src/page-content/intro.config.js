@@ -10,6 +10,7 @@ export const IntroConfig = {
       side: "right",
     },
     elements: [
+      <h1>Introduction</h1>,
       <h2 className="lightWeight">
         Many organisations rely on aging or proprietary process orchestration
         software that can be rigid, costly or difficult to scale and often
@@ -26,18 +27,20 @@ export const IntroConfig = {
     },
     elements: [
       <h2>
-        Fluxnova is an open-source orchestration engine developed
-        collaboratively by industry leaders to address these challenges.
+        Fluxnova is an open-source process orchestration platform developed
+        collaboratively by industry leaders.
       </h2>,
       <p>
-        It offers cloud-native, standards aligned alternatives that eliminates
-        vendor lock-in by providing full access to the codebase, open governance
-        and transparent licensing under Apache 2.0.
+        It provides a standards-aligned, vendor-neutral alternative which
+        reduces lock-in through full code access, open governance and
+        transparent Apache 2.0 licensing. Flexible deployment options let teams
+        run Fluxnova embedded into a microservice – on prem, or as containers in
+        the cloud.
       </p>,
     ],
   },
   sectionTwo: {
-    className: "bg-gray color-black",
+    className: "side-padding-only bg-gray color-black",
     elements: [
       <p>
         Designed with extensibility and integration in mind, Fluxnova empowers
@@ -48,24 +51,27 @@ export const IntroConfig = {
     ],
   },
   sectionThree: {
-    className: "display-block bg-gray color-black",
+    className: "side-bottom-padding display-block bg-gray color-black",
     elements: [
       <h4>Key Highlights:</h4>,
       <ul>
+        <li>Enables end-to-end automation of complex, multi-step processes</li>
         <li>
-          Transparent governance and decision making, led by maintainers from
-          across the industry
+          Gives organizations the ability to adapt to change (e.g. new
+          regulations or market shifts) without re-architecting entire systems
         </li>
         <li>
-          Open licensing model (Apache 2.0) supporting flexibility,
-          redistribution and adoption at scale
+          Provides audit confidence with full workflow history, user actions,
+          timestamps and real time execution tracing
         </li>
         <li>
-          Seamless integration with CI/CD pipelines and enterprise tooling
+          Backed by financial services grade ecosystem with neutral governance
+          under FINOS and a public roadmap
         </li>
         <li>
-          A collaborative and growing community shaping the roadmap and
-          priorities
+          Delivers true freedom from lock-in as open source under the Apache 2.0
+          license – no license fees, no proprietary restrictions and no per-user
+          charges
         </li>
       </ul>,
     ],
@@ -74,10 +80,10 @@ export const IntroConfig = {
     className: "space-around bg-white",
     elements: [
       <button className="primary">
-        <Link>Get Started</Link>
+        <Link to="https://docs.fluxnova.finos.org">Get Started</Link>
       </button>,
       <button className="secondary">
-        <Link>Ways to Contribute</Link>
+        <Link to="/contribute">Ways to Contribute</Link>
       </button>,
     ],
   },

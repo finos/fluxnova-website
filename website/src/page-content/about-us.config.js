@@ -11,10 +11,13 @@ export const AboutUsConfig = {
       side: "right",
     },
     elements: [
+      <h1>About Us</h1>,
       <h2 className="lightWeight">
-        <strong>ABOUT US - </strong> Lorem ipsum dol or sit amet consectetur.
-        Fermentum sit faucibus turpis quam lectus nunc eu eu leo. At non cursus
-        ultrices metus non magnis mauris malesuada tempus.
+        Fluxnova is a process orchestration platform that helps organizations
+        design and run end-to-end workflows. Governed by FINOS and built on open
+        standards, it offers BPMN/DMN compatibility, migration tooling, and
+        audit-ready execution from day one giving teams the freedom to automate
+        and orchestrate without vendor dependence.
       </h2>,
     ],
   },
@@ -24,82 +27,126 @@ export const AboutUsConfig = {
       content: <OpenBookIcon fill="currentColor" />,
       side: "left",
     },
-    button: {
-      text: "Get Started",
-      className: "primary",
-    },
+    // button: {
+    //   text: "try it",
+    //   className: "primary",
+    // },
     elements: [
-      <h2>Maintainer Role</h2>,
+      <h2>
+        FINOS Launches Fluxnova with Fidelity Investments, NatWest Group,
+        Deutsche Bank, BMO and Capital One - An Open-Source Orchestration
+        Platform to Scale Process Automation
+      </h2>,
       <p>
-        A maintainer lead and drive product strategy by contributing to roadmap,
-        product features and commitment to open source.
-      </p>,
-      <p>
-        A maintainer is a contributor who, by virtue of their contribution
-        history, has been given write access to project repositories and may
-        approve and merge contributions to the project.
-      </p>,
-      <p>
-        A contributor is anyone who submits a contribution to the project.
-        Contributions include code & pull requests, issues, comments,
-        documentation, media, or any combination of the above.
+        Support and shape the Fluxnova ecosystem through{" "}
+        <a
+          href="https://www.finos.org/membership-benefits#become-a-member"
+          target="_blank"
+        >
+          FINOS Membership
+        </a>
+        . Help fuel growth, influence the future direction of the project, and
+        prepare for opportunities such as certification.
       </p>,
     ],
   },
   sectionThree: {
-    className: "bg-white color-gray",
-    image: {
-      content: <PeopleExchangeIcon fill="black" />,
-      side: "left",
-    },
-    button: {
-      text: "Join the Community",
-      className: "secondary",
-    },
+    className: "bg-white color-gray display-block",
+    // image: {
+    //   content: <PeopleExchangeIcon fill="black" />,
+    //   side: "left",
+    // },
+    // button: {
+    //   text: "Join the Community",
+    //   className: "secondary",
+    // },
     elements: [
-      <h2>Maintainer Responsibilities and available resources</h2>,
+      <h2>Member and Leadership Perspectives</h2>,
       <p>
-        FINOS project maintainers are responsible for technical & subject matter
-        oversight of the project, and for driving commmunity growth and
-        engagement. FINOS supports project maintainers and their project
-        communities through:
+        <q className="quotes">
+          Fluxnova gives our industry the ability to build together, share
+          together, and safeguard together. As the first time financial
+          institutions exercise their right to fork to collaboratively chart
+          their future under an open governance, this is a landmark moment in
+          the open source readiness journey of this industry, showing a clear
+          path to the strategic ROI open collaboration can deliver.
+        </q>{" "}
+        <strong> - Gabriele Columbro, Executive Director, FINOS</strong>
       </p>,
-      <ul>
-        <li>
-          Operational enablement & support: GitHub, meeting infrastructure
-        </li>
-        <li>
-          Guidance and coaching on open source governance and best practices
-        </li>
-        <li>
-          Project marketing: coordination and production of webinars,
-          newsletters, podcasts, participation in FINOS and external conferences
-          and events, project merchandising/swag
-        </li>
-      </ul>,
       <p>
-        FINOS project maintainers are encouraged to leverage the Linux
-        Foundation's LFX Project Control Center, a platform that enables
-        self-service configuration for governance, membership, IT, developer and
-        collaboration tools, documentation, and community roles.
+        <q className="quotes">
+          Fluxnova represents a tremendous opportunity to collaborate with our
+          peers and build a robust community around production-grade code.
+          Across organizations, business process modeling is a core business
+          capability with many common implementation characteristics, making it
+          ripe for open collaboration. We are committed to being responsible
+          users and contributors within the open-source community and welcome
+          the new relationships this project will bring.
+        </q>{" "}
+        <strong>
+          {" "}
+          - Joe Frazier, Head of Architecture and Engineering at Fidelity
+          Investments
+        </strong>
+      </p>,
+      <p>
+        <q className="quotes">
+          Fluxnova shows what's possible through open collaboration - creating
+          shared solutions that make innovation faster and more accessible
+          across the industry. The project gives organisations the freedom to
+          modernise on their own terms while empowering engineers with the tools
+          and autonomy to focus on what they do best. By reducing complexity and
+          improving collaboration, we can better deliver experiences that our
+          colleagues and customers truly value.
+        </q>{" "}
+        <strong>
+          {" "}
+          - James McLeod, Open Source Program Lead, NatWest Group
+        </strong>
+      </p>,
+      <p>
+        <q className="quotes">
+          Fluxnova provides us with a predictable long-term model that supports
+          process automation and transparent workflow management. These are
+          essential activities as we improve the client experience, safeguard
+          compliance and strengthen resilience.
+        </q>{" "}
+        <strong> - Stefan Schaffer, Deutsche Bank</strong>
+      </p>,
+      <p>
+        <q className="quotes">
+          BMO recognizes that collaboration is essential to the future of
+          finance. Fluxnova provides the open, scalable, and secure foundation
+          needed to support client trust and regulatory alignment.
+        </q>{" "}
+        <strong> - Kim Prado, BMO</strong>
+      </p>,
+      <p>
+        <q className="quotes">
+          At Capital One, open source powers our ability to accelerate
+          innovation and better serve our customers. We’re committed to our role
+          as sustainers in the open source community, and the Fluxnova project
+          is a strong example of innovation that can arise when organizations
+          are invested in open source. Fluxnova offers a scalable orchestration
+          platform as enterprises continue to evolve with automation and AI.
+        </q>{" "}
+        <strong>
+          {" "}
+          - Duane O’Brien, Director and Head of Open Source Program Office,
+          Capital One
+        </strong>
       </p>,
     ],
   },
-  sectionFour: {
-    className: "bg-white color-gray",
-    image: {
-      content: <GroupsIcon fill="black" />,
-      side: "left",
-    },
-    elements: [
-      <h2>Liason to FINOS</h2>,
-      <p>
-        Each project is assigned a FINOS Liason to act as the primary point of
-        contact between the project and FINOS. The Liason works closely with
-        project maintainers to ensure that the project is receiving the support
-        it needs, and to help identify opportunities for growth and engagement
-        within the broader FINOS community.
-      </p>,
-    ],
-  },
+  // sectionFour: {
+  //   className: "bg-white color-gray",
+  //   image: {
+  //     content: <GroupsIcon fill="black" />,
+  //     side: "left",
+  //   },
+  //   elements: [
+  //     <h2>Certification???</h2>,
+  //     <p>content about the certification program...</p>,
+  //   ],
+  // },
 };

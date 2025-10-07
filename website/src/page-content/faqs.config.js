@@ -34,16 +34,18 @@ export const faqsConfig = {
         orchestrate without vendor dependence.
       </p>,
       <p>
-        <a href="#">Read the Documentation</a> -{" "}
-        <a href="#">Explore the GitHub Repository</a>
+        <a href="https://docs.fluxnova.finos.org/">Read the Documentation</a> -{" "}
+        <a href="https://github.com/finos/fluxnova-bpm-platform">
+          Explore the GitHub Repository
+        </a>
       </p>,
       <h3>Who contributes to Fluxnova?</h3>,
       <p>
         Fluxnova is a collaborative open-source initiative governed by FINOS
         under the Linux Foundation. It’s developed and maintained by a community
         of contributors from leading financial institutions and technology teams
-        including Fidelity, NatWest, Capital One, Deutsche Bank, and BMO with
-        participation open to the wider industry.
+        currently including Fidelity, NatWest Group, Capital One, Deutsche Bank,
+        and BMO with participation open to the wider industry.
       </p>,
       <p>
         <a href="/about-us">Meet the maintainers</a> -{" "}
@@ -54,9 +56,6 @@ export const faqsConfig = {
         The first release of Fluxnova is targeted for November 2025. This
         milestone marks the beginning of the platform’s availability to the
         wider community as an open-source process orchestration solution.
-      </p>,
-      <p>
-        <a href="#">View the roadmap</a>
       </p>,
       <h3>How is Fluxnova different from other orchestration platforms?</h3>,
       <p>
@@ -98,9 +97,6 @@ export const faqsConfig = {
         orchestration platforms is something we’re actively exploring for the
         future.
       </p>,
-      <p>
-        <a href="#">Register your interest for future migration tooling</a>
-      </p>,
       <h3>Will my existing BPMN and DMN models work?</h3>,
       <p>
         Absolutely. BPMN and DMN models created for Camunda 7 work with Fluxnova
@@ -127,9 +123,9 @@ export const faqsConfig = {
       <h2 className="lightWeight paddingTop">Tools & Features</h2>,
       <h3>Does Fluxnova include modelling and monitoring tools?</h3>,
       <p>
-        Yes. Fluxnova includes a Modeler for BPMN and DMN design and a "Cockpit"
-        for managing and monitoring process instances, both enhanced by ongoing
-        community contributions.
+        Yes. Fluxnova includes a Modeler for BPMN and DMN design and a front-end
+        UI for managing and monitoring process instances, both enhanced by
+        ongoing community contributions.
       </p>,
       <h3>Will analytics and reporting be available?</h3>,
       <p>
@@ -145,11 +141,14 @@ export const faqsConfig = {
         support options will be available through trained partners.
       </p>,
       <p>
-        <a href="#" target="_new">
+        <a
+          href="https://github.com/finos/fluxnova-bpm-platform/discussions"
+          target="_new"
+        >
           Join the community
         </a>{" "}
         -{" "}
-        <a href="#" target="_new">
+        <a href="https://github.com/finos/fluxnova-bpm-platform" target="_new">
           Contribute on GitHub
         </a>
       </p>,
@@ -165,12 +164,10 @@ export const faqsConfig = {
         documentation to feature ideas and feedback.
       </p>,
       <p>
-        <a href="#" target="_new">
-          Contribute now
-        </a>
+        <a href="/contribute">Contribute now</a>
       </p>,
 
-      <h2 className="lightWeight paddingTop">Roadmap & Future</h2>,
+      <h2 className="lightWeight paddingTop">Ideas & Future</h2>,
       <h3>What’s next for Fluxnova?</h3>,
       <p>
         The project roadmap is community-driven and focuses on continuous
@@ -179,21 +176,18 @@ export const faqsConfig = {
         Fluxnova will evolve with input from multiple organizations and an
         active contributor base.
       </p>,
-      <p>
-        <a href="/roadmap">Explore the roadmap</a>
-      </p>,
     ],
   },
   sectionFour: {
     className: "bg-gray color-charcoal display-block",
 
     elements: [
-      <h3>Have you explore our rich documentation?</h3>,
+      <h3>Have you explored our documentation?</h3>,
       <p>
         Fluxnova documentation helps you move through each stage confidently.
       </p>,
       <p>
-        <a href="#" target="_new">
+        <a href="https://docs.fluxnova.finos.org/" target="_new">
           Documentation
         </a>
       </p>,

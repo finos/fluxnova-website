@@ -1,6 +1,6 @@
 import Layout from "@theme/Layout";
 import classnames from "classnames";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import React from "react";
 import { engineConfig as pageConfig } from "../page-content/engine.config";
 import TextWithCard from "../components/blocks/text-with-card";

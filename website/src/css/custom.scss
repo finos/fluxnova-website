@@ -74,6 +74,7 @@ h2 {
   font-size: var(--ifm-fs-big);
   &.lightWeight {
     font-weight: 400;
+    font-size: 1.8rem;
   }
   &.paddingTop {
     padding-top: 25px;
@@ -86,6 +87,9 @@ h3 {
 
 h4 {
   font-size: var(--ifm-fs-seminormal);
+  &.primary-color {
+    color: #007dff;
+  }
 }
 p {
   font-size: var(--ifm-fs-normal);
@@ -116,15 +120,6 @@ ul {
   background-color: #007dff;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.fluxnova-image {
-  margin-bottom: 30px;
-  width: 42%;
-}
-
-.hero__title {
-  color: #ffffff;
 }
 
 .lightWeight a {
@@ -166,6 +161,7 @@ button {
     color: inherit;
     &:hover {
       color: inherit;
+      text-decoration: none;
     }
   }
   &.primary {
@@ -182,6 +178,7 @@ button {
     background-color: white;
     &:hover {
       background-color: #eafff9;
+      text-decoration: none;
     }
   }
 
@@ -195,12 +192,28 @@ button {
   }
 }
 
+.fluxnova-image {
+  margin-bottom: 30px;
+  width: 42%;
+  @media screen and (max-width: 966px) {
+    width: 90%;
+    margin: 0 0 30px 0;
+  }
+}
+
+.hero__title {
+  color: #ffffff;
+}
+
 .hero--subtitle {
   margin-top: -20px;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #bce0ef;
+  @media screen and (max-width: 966px) {
+    font-size: 1.7rem;
+  }
 }
 
 .heroDescription {
@@ -248,22 +261,62 @@ span {
 .footer-fluxnova-icon {
   position: absolute;
   padding: 50px;
+  @media screen and (max-width: 966px) {
+    height: 50px;
+    position: relative;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+}
+
+.footer-top {
+  @media screen and (max-width: 966px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px 0 50px;
+  }
+}
+
+.col {
+  @media screen and (max-width: 966px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-resources {
   padding-top: 40px;
   padding-bottom: 10px;
   margin-left: 250px;
+  @media screen and (max-width: 966px) {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+}
+
+.footer__links {
+  @media screen and (max-width: 966px) {
+    margin: 0;
+  }
 }
 
 .footer__bottom {
   background-color: #000000;
-  color: #b8b8b8;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 1rem 2rem;
+  a {
+    text-decoration: none;
+    color: #b8b8b8;
+    padding: 1rem 2rem;
+  }
+  @media screen and (max-width: 966px) {
+    flex-direction: column;
+  }
 }
 
 .footer-links {
@@ -279,11 +332,22 @@ span {
   display: flex;
   white-space: nowrap;
   top: 80%;
+  @media screen and (max-width: 966px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: 10px;
+  }
 }
 
 .footer-finos-logo {
   height: 70px;
   margin-left: 25px;
+  @media screen and (max-width: 966px) {
+    margin: 10px 0 0 0;
+    height: 50px;
+  }
 }
 
 .footer__link-item:hover {
@@ -313,6 +377,14 @@ span {
 
 .standard-padding {
   padding: 40px 60px;
+}
+
+.side-padding-only {
+  padding: 0px 60px;
+}
+
+.side-bottom-padding {
+  padding: 0px 60px 40px 60px;
 }
 
 .horizontal-flex {
@@ -416,4 +488,21 @@ span {
 }
 .secondary-bullets {
   font-size: 1rem;
+}
+
+.quotes {
+  font-style: italic;
+}
+
+.code-text {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.code-snippet {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+hr {
+  margin: 0;
 }

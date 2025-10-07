@@ -6,12 +6,12 @@ export const HomeConfig = {
   buttons: [
     {
       name: <>Get Started</>,
-      url: "",
+      url: "https://docs.fluxnova.finos.org",
       style: classnames("primary"),
     },
     {
       name: <>Join the Community</>,
-      url: "",
+      url: "https://github.com/finos/fluxnova-bpm-platform/discussions",
       style: classnames("secondary"),
     },
   ],

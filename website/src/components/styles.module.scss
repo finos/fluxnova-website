@@ -1,0 +1,29 @@
+.codeBlockContainer {
+  &:hover {
+    .copyBtn {
+      opacity: 1;
+    }
+  }
+}
+
+.header {
+  background-color: #1e1e1e;
+  color: var(--ifm-color-light);
+  font-weight: bold;
+  padding: 10px 16px;
+  font-family: "Courier New", Courier, monospace;
+  border-top-right-radius: var(--ifm-pre-border-radius);
+  border-top-left-radius: var(--ifm-pre-border-radius);
+}
+
+.copyBtn {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  padding: 4px;
+}

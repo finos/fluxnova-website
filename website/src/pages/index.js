@@ -3,7 +3,7 @@ import classnames from "classnames";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import Feature from "../components/feature";
 import { features } from "../components/feature-config";
 import { HomeConfig as pageConfig } from "../page-content/home.config";
@@ -22,8 +22,10 @@ function Home() {
           ></img>
           <p className={classnames("hero--subtitle")}>{siteConfig.tagline}</p>
           <p className={styles.fluxnovaDescription}>
-            Fluxnova is a modern, open source workflow orchestration engine
-            tailored for regulated industries.
+            Fluxnova is a new opensource BPM platform which aims to provide
+            automation and orchestration capabilities to accelerate the
+            digitization of end to end process or workflow across the
+            organization.
           </p>
         </div>
       </header>
@@ -43,10 +45,8 @@ function Home() {
           {pageConfig.buttons && pageConfig.buttons.length && (
             <div className={styles.buttons}>
               {pageConfig.buttons.map((props, idx) => (
-                <button className={props.style}>
-                  <Link key={idx} to={props.url}>
-                    {props.name}
-                  </Link>
+                <button className={props.style} key={idx}>
+                  <Link to={props.url}>{props.name}</Link>
                 </button>
               ))}
             </div>
@@ -62,11 +62,11 @@ function Home() {
         <div className={styles.mainDescription}>
           Backed by FINOS/Linux Foundation, Fluxnova empowers digitization
           through process orchestration, helping organizations to increase
-          straight through processing(STP) by automating complex processes
+          straight through processing (STP) by automating complex processes
           involving multiple endpoints via BPM workflows.
           <div>
-            Fluxnova is open source and available under Apache 2.0 OSI
-            compliance license
+            Fluxnova is opensource and available under the Apache 2.0 licence,
+            compliant with OSI standards.
           </div>
         </div>
       </main>

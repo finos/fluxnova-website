@@ -9,35 +9,27 @@ export default function FooterLayout({ style, links, logo, copyright }) {
       })}
     >
       <div className="container-fluid">
-        <img
-          className="footer-fluxnova-icon"
-          src="img/fluxnova/fluxnova-icon.png"
-        ></img>
-        <div className="footer-resources">{links}</div>
+        <div className="footer-top">
+          <img
+            className="footer-fluxnova-icon"
+            src="/img/fluxnova/fluxnova-icon.png"
+            alt="Fluxnova icon"
+          />
+          <div className="footer-resources">{links}</div>
+        </div>
         <div className="footer__bottom">
           <img
             className="footer-finos-logo"
-            src="img/finos/finos-white.png"
-          ></img>
+            src="/img/finos/finos-white.png"
+            alt="Fluxnova icon"
+          />
           <div className="footer-links footer__bottom text--center">
-            <a
-              className="footer__bottom"
-              href="https://www.finos.org/privacy-policy"
-            >
-              Privacy
-            </a>
-            |
-            <a
-              className="footer__bottom"
-              href="https://www.finos.org/terms-of-service"
-            >
+            <a href="https://www.finos.org/privacy-policy">Privacy</a>|
+            <a href="https://www.finos.org/terms-of-service">
               Terms of Service
             </a>
             |
-            <a
-              className="footer__bottom"
-              href="https://www.finos.org/code-of-conduct"
-            >
+            <a href="https://www.finos.org/code-of-conduct">
               Community Code of Conduct
             </a>
             |

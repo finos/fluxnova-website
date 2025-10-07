@@ -39,7 +39,9 @@ export const modelerConfig = {
       </p>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
-          <Link>Download</Link>
+          <Link to="https://github.com/finos/fluxnova-modeler/releases">
+            Learn More
+          </Link>
         </button>
       </div>,
     ],

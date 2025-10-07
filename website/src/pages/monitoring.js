@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "@theme/Layout";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 import { MonitoringConfig as pageConfig } from "../page-content/monitoring.config";
 import generateElements from "../utils/generate-elements";
 import TextWithCard from "../components/blocks/text-with-card";
