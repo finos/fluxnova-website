@@ -195,7 +195,10 @@ module.exports = {
       ]
     },
   },
-  plugins: ['docusaurus-plugin-sass', './plugins/webpack-filter.js'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    './plugins/webpack-filter.js'
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -203,6 +206,10 @@ module.exports = {
         docs: false,
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
+        },
+        gtag: {
+          trackingID: 'G-V9GHL7547J',
+          anonymizeIP: true,
         }
       }
     ]
