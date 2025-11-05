@@ -11,7 +11,7 @@ export const HomeConfig = {
     },
     {
       name: <>Join the Community</>,
-      url: "https://github.com/finos/fluxnova-bpm-platform/discussions",
+      url: "https://github.com/finos/fluxnova-modeler/discussions",
       style: classnames("secondary"),
     },
   ],

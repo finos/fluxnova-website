@@ -35,8 +35,8 @@ export const faqsConfig = {
       </p>,
       <p>
         <a href="https://docs.fluxnova.finos.org/">Read the Documentation</a> -{" "}
-        <a href="https://github.com/finos/fluxnova-bpm-platform">
-          Explore the GitHub Repository
+        <a href="#">
+          Explore the GitHub Repository (Available on Nov 11th 2025)
         </a>
       </p>,
       <h3>Who contributes to Fluxnova?</h3>,
