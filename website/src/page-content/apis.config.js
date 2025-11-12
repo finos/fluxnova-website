@@ -44,8 +44,8 @@ export const APIsConfig = {
       <h3>Get started by visiting our REST API documentation</h3>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
-          <Link to="https://docs.fluxnova.finos.org/reference/rest/overview">
-            Learn More
+          <Link to="/docs/category/fluxnova">
+            API Spec
           </Link>
         </button>
       </div>,

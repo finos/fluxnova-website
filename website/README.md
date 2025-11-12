@@ -6,6 +6,14 @@ In order to start working with Docusaurus, please read the [Getting Started guid
 - `website/static` - contains images, PDF and other static assets used in the website; if you add a `file.pdf` in this folder, it will be served as `https://<your_host>/file.pdf`.
 - `docs` - contains the `.md` and `.mdx` files that are served as `https://<your_host>/<file_id>` ; the `file_id` is defined at the top of the file.
 
+## Docs/API docs
+
+- We use a [plugin](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) to generate the md files for our API documentation.
+- Place a .json or .yaml file in the `api-specs` folder, then add the configuration in the `docusaurus-plugin-openapi-docs` plugin in the [config](./docusaurus.config.js).
+- In order to generate the .md files for the documentation, navigate to the `website` directory, then run:
+- `npm run docusaurus gen-api-docs all`
+- To clear the docs, run: `npm run docusaurus clean-api-docs all`
+
 ## Local run
 
 Running Docusaurus locally is very simple, just follow these steps:
@@ -16,10 +24,10 @@ The command should open your browser and point to `http://localhost:3000`.
 
 ## Deployment
 
-[Netlify] (https://www.netlify.com/) is the default way to serve FINOS websites publicly. Find docs [here] (https://docs.netlify.com/configure-builds/get-started/).
+[Netlify](https://www.netlify.com/) is the default way to serve FINOS websites publicly. Find docs [here](https://docs.netlify.com/configure-builds/get-started/).
 
 You can configure Netlify using your own GitHub account, pointing to a personal repository (or fork); when adding a new site, please use the following configuration:
-- Woeking directory: `website`
+- Working directory: `website`
 - Build command: `yarn build`
 - Build directory: `website/build`
 

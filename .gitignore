@@ -8,6 +8,10 @@ website/build
 website/.docusaurus
 .cache-loader
 package-lock.json
+yarn.lock
+
+# Auto-generated api docs
+website/docs/fluxnova
 
 # Intellij
 **/*.iml

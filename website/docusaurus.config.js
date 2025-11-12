@@ -75,6 +75,10 @@ module.exports = {
               label: 'FAQs',
               to: '/faqs'
             },
+            {
+              label: 'API Spec',
+              to: '/docs/category/fluxnova'
+            }
           ]
         },
         {
@@ -176,6 +180,10 @@ module.exports = {
             {
               label: 'FAQs',
               to: '/faqs'
+            },
+            {
+              label: 'API Spec',
+              to: '/docs/category/fluxnova'
             }
           ]
         },
@@ -197,15 +205,36 @@ module.exports = {
   },
   plugins: [
     'docusaurus-plugin-sass',
-    './plugins/webpack-filter.js'
+    './plugins/webpack-filter.js',
+    [
+        'docusaurus-plugin-openapi-docs',
+      {
+        id: "api", // plugin id
+        docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
+        config: {
+          fluxnova: {
+            specPath: "api-specs/fluxnova.json",
+            outputDir: "docs/fluxnova",
+            hideSendButton: true,
+            sidebarOptions: {
+              groupPathsBy: "tag",
+              categoryLinkSource: "tag",
+            },
+          },
+        }
+      }
+    ],
   ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
-        docs: false,
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
+        },
+        docs: {
+          sidebarPath: './sidebars.js',
+          docItemComponent: "@theme/ApiItem",
         },
         gtag: {
           trackingID: 'G-V9GHL7547J',
@@ -213,5 +242,6 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
+  themes: ["docusaurus-theme-openapi-docs"],
 };
