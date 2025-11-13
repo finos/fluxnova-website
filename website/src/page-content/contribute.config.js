@@ -33,7 +33,7 @@ export const contributeConfig = {
         </a>{" "}
         or by joining our mailing list{" "}
         <a href="mailto:fluxnova@lists.finos.org">fluxnova@lists.finos.org</a>{" "}
-        (email <a href="mailto:help@finos.org">help@finos.org</a> to add you to
+        (email <a href="mailto:fluxnova+subscribe@lists.finos.org">fluxnova+subscribe@lists.finos.org</a> to self subscribe to
         the list).
       </p>,
       <h3>File bugs or feature requests</h3>,
