@@ -64,6 +64,8 @@ export const MonitoringConfig = {
     ],
   },
   sectionThree: {
+    className: "block bg-white",
+    imageSide: "right",
     image: {
       content: (
         <img src="/img/feature/monitoring/detail.png" alt="DetailView" />

@@ -13,9 +13,9 @@ export const ContactUsConfig = {
     },
     elements: [
       <h1>Contact Us</h1>,
-      <div >
+      <div>
         <ContactUsForm />
-      </div>
+      </div>,
     ],
-  }
+  },
 };

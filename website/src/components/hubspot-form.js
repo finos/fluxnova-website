@@ -1,9 +1,8 @@
-import React, {  useCallback, useEffect, useRef  } from 'react';
-import { debounce } from 'lodash';
-import HubspotForm from 'react-hubspot-form';
+import React, { useCallback, useEffect, useRef } from "react";
+import { debounce } from "lodash";
+import HubspotForm from "react-hubspot-form";
 
 export default function ContactUsForm() {
-  
   const containerRef = useRef(null);
   const resizeObserverRef = useRef(null);
 
@@ -14,7 +13,7 @@ export default function ContactUsForm() {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         // Your logic to handle the resize
-        console.log('Container resized!');
+        console.log("Container resized!");
       }, 500);
     };
 
@@ -30,15 +29,14 @@ export default function ContactUsForm() {
     };
   }, []);
 
-  
   return (
-    <div ref={containerRef} style={{ padding: '2rem 0' }}>
+    <div ref={containerRef} style={{ padding: "2rem 0" }}>
       <HubspotForm
-        portalId='2419532'
-        formId='ddea5d0e-c8dd-4198-86d4-ffb918017d7b'
-        region='na1'
-        onSubmit={() => console.log('Form submitted!')}
-        onReady={(form) => console.log('Form ready!')}
+        portalId="2419532"
+        formId="ddea5d0e-c8dd-4198-86d4-ffb918017d7b"
+        region="na1"
+        onSubmit={() => console.log("Form submitted!")}
+        onReady={(form) => console.log("Form ready!")}
         loading={<div>Loading...</div>}
       />
     </div>

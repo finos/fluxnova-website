@@ -22,6 +22,12 @@ Running Docusaurus locally is very simple, just follow these steps:
 
 The command should open your browser and point to `http://localhost:3000`.
 
+## Git commit errors
+
+- If you run into prettier formatting errors when committing, navigate to the `website` folder and run `npm run format`.
+- Stage any changes and re-commit.
+- This is to maintain a consistent format pattern for all maintainers.
+
 ## Deployment
 
 [Netlify](https://www.netlify.com/) is the default way to serve FINOS websites publicly. Find docs [here](https://docs.netlify.com/configure-builds/get-started/).

@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
+import CodeBlock from "../components/blocks/code-block";
 import APIIcon from "/img/icons/api.svg";
-import CodeBlock from "../components/code-block";
-// import CodeBlock from '@theme/CodeBlock';
-import { Highlight } from "prism-react-renderer";
 
 export const APIsConfig = {
   hero: {
@@ -44,9 +42,7 @@ export const APIsConfig = {
       <h3>Get started by visiting our REST API documentation</h3>,
       <div style={{ textAlign: "center" }}>
         <button className="primary">
-          <Link to="/docs/category/fluxnova">
-            API Spec
-          </Link>
+          <Link to="/docs/category/fluxnova">API Spec</Link>
         </button>
       </div>,
     ],
@@ -157,9 +153,7 @@ Content-Type: application/json`}
   "definitionKey": "Process_0kzrpyy"
 }`}
       />,
-      <h3 className="color-black">
-        Update Process Instance Variables
-      </h3>,
+      <h3 className="color-black">Update Process Instance Variables</h3>,
       <h4 className="primary-color">Endpoint:</h4>,
       <p className="code-text">
         <strong>POST /engine-rest/process-instance/{`{id}`}/variables</strong>

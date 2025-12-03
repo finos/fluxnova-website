@@ -9,7 +9,7 @@ const copyrightOwner = 'FINOS'
 
 module.exports = {
   title: `FINOS ${projectName}`,
-  tagline: `AUTOMATE, ORCHESTRATE and ACCELERATE`, 
+  tagline: `AUTOMATE, ORCHESTRATE, and ACCELERATE`,
   url: 'https://finos.org',
   baseUrl: '/',
   trailingSlash: false,
