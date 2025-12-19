@@ -9,7 +9,9 @@
     "prebuild": "docusaurus gen-api-docs all",
     "build": "npm run prebuild && docusaurus build",
     "publish-gh-pages": "docusaurus deploy",
-    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}\""
+    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}\"",
+    "check-format": "npx prettier --check \"src/**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}\"",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",
@@ -31,7 +33,8 @@
   },
   "devDependencies": {
     "eslint": "^9.0.0",
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^9.1.7"
   },
   "browserslist": {
     "production": [

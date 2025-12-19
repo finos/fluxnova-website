@@ -4,28 +4,9 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 8rem;
-}
-
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
-  }
-}
-
-.fluxnovaDescription {
-  font-size: 1.7rem;
-  width: 85%;
-  margin: auto;
-  @media screen and (max-width: 966px) {
-    font-size: 1.5rem;
-    width: 100%;
   }
 }
 
@@ -33,14 +14,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1.5rem;
-  width: 50%;
+  width: 40%;
   @media screen and (max-width: 966px) {
     display: block;
     width: 100%;
@@ -78,7 +60,8 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
-  margin-top: -140px;
+  //margin-top: -140px;
+  margin: -140px auto 0;
   @media screen and (max-width: 966px) {
     margin: 10px 0;
   }
@@ -106,38 +89,27 @@
   padding: 50px;
 }
 
-.sectionThree {
-  // leaving these until this CTA block is made into a component
-  position: relative;
-  background-color: var(--ifm-color-primary);
-  color: white;
-  padding: 40px 50px;
-  font-weight: bold;
-}
-
-.sectionThree button {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
-.sectionThreeText {
-  padding: 40px;
-}
-
-.sectionThreeImageWrapper {
+.featureWrapper {
   display: flex;
-  justify-content: flex-end;
-}
-
-.sectionThreeImage {
-  background-color: var(--ifm-background-color);
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
-  margin: 10px 0;
-  width: 90%;
-}
-
-.sectionThreeImage img {
-  padding: 30px 0 30px 30px;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
+  li {
+    max-width: 300px;
+    text-wrap: wrap;
+  }
+  img {
+    max-height: 60px;
+    max-width: 60px;
+    margin: 0 15px 0 0;
+  }
+  .featureBlip {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  .featureHeader {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }

@@ -1,7 +1,5 @@
 import LocationIcon from "/img/icons/location.svg";
 import OpenBookIcon from "/img/icons/open-book.svg";
-import PeopleExchangeIcon from "/img/icons/people-exchange.svg";
-import GroupsIcon from "/img/icons/groups.svg";
 
 export const AboutUsConfig = {
   sectionOne: {

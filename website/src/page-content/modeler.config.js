@@ -82,7 +82,14 @@ export const modelerConfig = {
       </ul>,
     ],
   },
-  sectionThree: {
+  ctaSection: {
+    button: (
+      <button className="tertiary">
+        <Link to="https://github.com/finos/fluxnova-bpm-platform/tree/main/migrator">
+          Try the Migration Tool
+        </Link>
+      </button>
+    ),
     elements: [
       <h2>Already have processes? Let's move them</h2>,
       <p>Switching engines doesn’t have to be difficult.</p>,

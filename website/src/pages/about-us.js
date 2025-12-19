@@ -9,7 +9,6 @@ export default function AboutUs() {
       <TextWithImage config={pageConfig.sectionOne} />
       <TextWithImage config={pageConfig.sectionTwo} />
       <TextBlock config={pageConfig.sectionThree} />
-      {/* <TextWithImage config={pageConfig.sectionFour} /> */}
     </Layout>
   );
 }
