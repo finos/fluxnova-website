@@ -31,7 +31,7 @@ export const MigrationConfig = {
     button: {
       text: "Learn more",
       className: "primary",
-      to: "https://github.com/finos/fluxnova-modeler/blob/develop/README.md",
+      to: "https://github.com/finos/fluxnova-bpm-platform/tree/main/migrator",
     },
     elements: [
       <h2>How it works</h2>,
@@ -118,7 +118,7 @@ export const MigrationConfig = {
       <h2 className="paddingTop">Ready to Start?</h2>,
       <p>Fluxnova Migrator is available today free and open source.</p>,
       <button className="primary">
-        <Link to="https://github.com/finos/fluxnova-modeler/blob/develop/README.md">
+        <Link to="https://github.com/finos/fluxnova-bpm-platform/tree/main/migrator">
           Migrate
         </Link>
       </button>,
