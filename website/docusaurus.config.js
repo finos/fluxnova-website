@@ -14,7 +14,6 @@ module.exports = {
   baseUrl: '/',
   onBrokenAnchors: "throw",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
   onDuplicateRoutes: "throw",
   trailingSlash: false,
   favicon: 'img/favicon/fluxnova.ico',
@@ -22,6 +21,11 @@ module.exports = {
   organizationName: 'FINOS',
   customFields: {
     repoUrl: `https://github.com/finos/${projectSlug}`,
+  },
+  markdown: {
+    hooks: {
+        onBrokenMarkdownLinks: 'throw',
+    },
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   stylesheets: ['https://fonts.googleapis.com/css?family=Overpass:400,400i,700'],
