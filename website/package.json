@@ -32,7 +32,7 @@
     "sass": "^1.92.1"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^10.0.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^9.1.7"
   },
