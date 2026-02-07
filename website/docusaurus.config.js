@@ -22,8 +22,10 @@ module.exports = {
   customFields: {
     repoUrl: `https://github.com/finos/${projectSlug}`,
   },
-  hooks: {
-      onBrokenMarkdownLinks: 'throw',
+  markdown: {
+    hooks: {
+        onBrokenMarkdownLinks: 'throw',
+    },
   },
   scripts: ['https://buttons.github.io/buttons.js'],
   stylesheets: ['https://fonts.googleapis.com/css?family=Overpass:400,400i,700'],
