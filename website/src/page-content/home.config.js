@@ -70,7 +70,6 @@ export const HomeConfig = {
           <button className="primary">
             <Link to="https://docs.fluxnova.finos.org">Get Started</Link>
           </button>
-          ,
           <button className="secondary">
             <Link to="https://github.com/finos/fluxnova-bpm-platform/discussions">
               Join the Community
