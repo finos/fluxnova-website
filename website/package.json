@@ -35,7 +35,7 @@
     "eslint": "^9.0.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^9.1.7",
-    "webpack": "5.105.4"
+    "webpack": "5.106.2"
   },
   "browserslist": {
     "production": [
