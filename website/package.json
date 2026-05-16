@@ -53,6 +53,6 @@
     "node": ">=18.0"
   },
   "overrides": {
-    "electron-to-chromium": "1.5.267"
+    "electron-to-chromium": "1.5.357"
   }
 }
