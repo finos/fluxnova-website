@@ -1,4 +1,4 @@
-const defaultBlockClassName = "block standard-padding horizontal-flex";
+const defaultBlockClassName = "page-section";
 
 export default function generateClassName(className) {
   return `${defaultBlockClassName} ${className ? className : ""}`.trim();

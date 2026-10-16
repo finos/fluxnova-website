@@ -9,14 +9,15 @@ export const AboutUsConfig = {
       side: "right",
     },
     elements: [
+      <div className="section-kicker">FINOS project</div>,
       <h1>About Us</h1>,
-      <h2 className="lightWeight">
+      <p className="page-lead">
         Fluxnova is a process orchestration platform that helps organizations
         design and run end-to-end workflows. Governed by FINOS and built on open
         standards, it offers BPMN/DMN compatibility, migration tooling, and
         audit-ready execution from day one giving teams the freedom to automate
         and orchestrate without vendor dependence.
-      </h2>,
+      </p>,
     ],
   },
   sectionTwo: {
@@ -30,10 +31,10 @@ export const AboutUsConfig = {
     //   className: "primary",
     // },
     elements: [
-      <h2>
+      <h2 className="section-heading">
         FINOS Launches Fluxnova with Fidelity Investments, NatWest Group,
-        Deutsche Bank, BMO and Capital One - An Open-Source Orchestration
-        Platform to Scale Process Automation
+        Deutsche Bank, BMO and Capital One — an open-source orchestration
+        platform to scale process automation
       </h2>,
       <p>
         Support and shape the Fluxnova ecosystem through{" "}

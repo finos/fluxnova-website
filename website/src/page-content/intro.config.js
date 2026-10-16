@@ -1,88 +1,89 @@
-import ReportIcon from "/img/icons/report.svg";
-import PersonPlayIcon from "/img/icons/personPlay.svg";
+import CheckmarkIcon from "/img/icons/checkmark.svg";
 import Link from "@docusaurus/Link";
 
 export const IntroConfig = {
   hero: {
     className: "bg-primary color-white",
     image: {
-      content: <ReportIcon fill="currentColor" />,
+      variant: "media",
+      content: (
+        <div className="intro-hero-visual">
+          <img
+            src="/img/feature/modeler/overview.png"
+            alt="Fluxnova process modeling canvas"
+          />
+        </div>
+      ),
       side: "right",
     },
     elements: [
-      <h1>Introduction</h1>,
-      <h2 className="lightWeight">
+      <div className="section-kicker" key="kicker">
+        Product overview
+      </div>,
+      <h1 key="title">Introduction</h1>,
+      <p className="page-lead" key="lead">
         Many organisations rely on aging or proprietary process orchestration
-        software that can be rigid, costly or difficult to scale and often
-        results in vendor lock-in, resulting in limited flexibility, increase in
-        long term dependency and slowing innovation
-      </h2>,
+        software that can be rigid, costly or difficult to scale — often
+        resulting in vendor lock-in, limited flexibility, and slower innovation.
+      </p>,
     ],
   },
   sectionOne: {
     className: "bg-gray color-black",
     image: {
-      content: <PersonPlayIcon fill="currentColor" />,
+      variant: "media",
+      content: (
+        <div className="intro-split-visual">
+          <img
+            src="/img/feature/engine/overview.png"
+            alt="Fluxnova core engine overview"
+          />
+          <img
+            src="/img/feature/monitoring/dashboard.png"
+            alt="Fluxnova monitoring dashboard"
+          />
+        </div>
+      ),
       side: "left",
     },
     elements: [
-      <h2>
-        Fluxnova is an open-source process orchestration platform developed
-        collaboratively by industry leaders.
+      <div className="section-kicker" key="kicker">
+        Why Fluxnova
+      </div>,
+      <h2 className="section-heading" key="title">
+        An open-source process orchestration platform developed collaboratively
+        by industry leaders.
       </h2>,
-      <p>
+      <p key="body">
         It provides a standards-aligned, vendor-neutral alternative which
         reduces lock-in through full code access, open governance and
         transparent Apache 2.0 licensing. Flexible deployment options let teams
-        run Fluxnova embedded into a microservice – on prem, or as containers in
+        run Fluxnova embedded into a microservice — on prem, or as containers in
         the cloud.
       </p>,
-    ],
-  },
-  sectionTwo: {
-    className: "side-padding-only bg-gray color-black",
-    elements: [
-      <p>
+      <p key="body2">
         Designed with extensibility and integration in mind, Fluxnova empowers
         institutions to modernize their workflow architecture while actively
-        participating in the evolution of the platform though the FINOS
+        participating in the evolution of the platform through the FINOS
         community.
       </p>,
     ],
   },
-  sectionThree: {
-    className: "side-bottom-padding display-block bg-gray color-black",
-    elements: [
-      <h4>Key Highlights:</h4>,
-      <ul>
-        <li>Enables end-to-end automation of complex, multi-step processes</li>
-        <li>
-          Gives organizations the ability to adapt to change (e.g. new
-          regulations or market shifts) without re-architecting entire systems
-        </li>
-        <li>
-          Provides audit confidence with full workflow history, user actions,
-          timestamps and real time execution tracing
-        </li>
-        <li>
-          Backed by financial services grade ecosystem with neutral governance
-          under FINOS and a public roadmap
-        </li>
-        <li>
-          Delivers true freedom from lock-in as open source under the Apache 2.0
-          license – no license fees, no proprietary restrictions and no per-user
-          charges
-        </li>
-      </ul>,
-    ],
-  },
+  highlights: [
+    "Enables end-to-end automation of complex, multi-step processes",
+    "Adapt to change — new regulations or market shifts — without re-architecting entire systems",
+    "Audit confidence with full workflow history, user actions, timestamps and real-time execution tracing",
+    "Financial services grade ecosystem with neutral governance under FINOS and a public roadmap",
+    "True freedom from lock-in under Apache 2.0 — no license fees, no proprietary restrictions, no per-user charges",
+  ],
+  CheckmarkIcon,
   sectionFour: {
     className: "space-around bg-white",
     elements: [
-      <button className="primary">
+      <button className="primary" key="started">
         <Link to="https://docs.fluxnova.finos.org">Get Started</Link>
       </button>,
-      <button className="secondary">
+      <button className="secondary" key="contribute">
         <Link to="/contribute">Ways to Contribute</Link>
       </button>,
     ],

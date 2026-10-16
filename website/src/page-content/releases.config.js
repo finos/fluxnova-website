@@ -11,10 +11,10 @@ export const releasesConfig = {
     },
     elements: [
       <h1>Fluxnova Releases</h1>,
-      <h2 className="lightWeight">
+      <p className="page-lead">
         Release notes include details of new product features, important
         changes, and enhancements.
-      </h2>,
+      </p>,
     ],
   },
   sectionTwo: {

@@ -12,14 +12,19 @@ export default function TextWithPaddedImage({ config }) {
       : "right";
 
   const elements = [
-    <div className="textContent">{generateElements(config.elements)}</div>,
-    <div className={`${styles.paddedImageWrapper} ${styles[imageSide]}`}>
+    <div className="page-copy" key="copy">
+      {generateElements(config.elements)}
+    </div>,
+    <div
+      className={`${styles.paddedImageWrapper} ${styles[imageSide]} page-media`}
+      key="media"
+    >
       {config.image.content}
     </div>,
   ];
 
   return (
-    <div
+    <section
       className={generateClassName(config?.className)}
       style={
         config.image.side === "right"
@@ -27,7 +32,9 @@ export default function TextWithPaddedImage({ config }) {
           : { paddingLeft: "0" }
       }
     >
-      {generateElements(getOrderedElements(config.image.side, elements))}
-    </div>
+      <div className="page-section__inner page-section__inner--media">
+        {generateElements(getOrderedElements(config.image.side, elements))}
+      </div>
+    </section>
   );
 }

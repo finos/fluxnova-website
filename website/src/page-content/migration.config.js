@@ -11,7 +11,7 @@ export const MigrationConfig = {
     },
     elements: [
       <h1>Why Fluxnova Migrator?</h1>,
-      <h2 className="lightWeight">
+      <p className="page-lead">
         Migrating workflows between BPMN platforms is rarely straightforward.
         Different engines interpret BPMN in their own ways, so even the simplest
         models can behave differently when moved causing delays, rework and
@@ -19,7 +19,7 @@ export const MigrationConfig = {
         automates the heavy lifting of migration, transforming your existing
         Camunda 7 Community Edition workflows into Fluxnova ready projects with
         speed, accuracy and minimal manual effort.
-      </h2>,
+      </p>,
     ],
   },
   sectionTwo: {

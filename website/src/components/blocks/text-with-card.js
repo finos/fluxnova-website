@@ -7,15 +7,19 @@ import generateElements from "../../utils/generate-elements";
 
 export default function TextWithCard({ config }) {
   const elements = [
-    <div className="standard-padding">{generateElements(config.elements)}</div>,
-    <div>
+    <div className="page-copy" key="copy">
+      {generateElements(config.elements)}
+    </div>,
+    <div className="page-visual" key="visual">
       <FeatureCard config={config} />
     </div>,
   ];
 
   return (
-    <div className={generateClassName(config?.className)}>
-      {generateElements(getOrderedElements(config.image.side, elements))}
-    </div>
+    <section className={generateClassName(config?.className)}>
+      <div className="page-section__inner page-section__inner--split">
+        {generateElements(getOrderedElements(config.image.side, elements))}
+      </div>
+    </section>
   );
 }

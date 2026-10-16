@@ -32,22 +32,20 @@ export const engineConfig = {
       ),
     },
     elements: [
-      <h2>
+      <h2 className="section-heading">
         At the heart of Fluxnova is a lightweight, high performance process
         engine built for modern enterprise automation.
       </h2>,
-      <h2 className="lightWeight">
+      <p>
         The Fluxnova engine empowers teams to orchestrate people, systems and
         data through clearly defined workflows, all while maintain full
         visibility and control
-      </h2>,
-      <div style={{ textAlign: "center" }}>
-        <button className="primary">
-          <Link to="https://demo.fluxnova.finos.org/fluxnova/app/welcome/default/#!/login">
-            View Demo
-          </Link>
-        </button>
-      </div>,
+      </p>,
+      <button className="primary">
+        <Link to="https://demo.fluxnova.finos.org/fluxnova/app/welcome/default/#!/login">
+          View Demo
+        </Link>
+      </button>,
     ],
   },
   sectionTwo: {

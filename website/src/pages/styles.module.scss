@@ -4,10 +4,36 @@
  * and scoped locally.
  */
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes featureIn {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.homeShell {
+  position: relative;
 }
 
 .buttonsWrapper {
@@ -15,16 +41,19 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  animation: fadeUp 700ms ease 220ms both;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   padding: 1.5rem;
-  width: 40%;
+  width: 100%;
+  max-width: 560px;
   @media screen and (max-width: 966px) {
-    display: block;
+    flex-direction: column;
     width: 100%;
     text-align: center;
   }
@@ -38,55 +67,166 @@
 }
 
 .feature {
-  background-color: white;
-  padding-top: 2.3rem;
-  border-radius: 40px;
+  background: linear-gradient(
+    165deg,
+    rgba(20, 28, 46, 0.95) 0%,
+    rgba(14, 21, 36, 0.98) 100%
+  );
+  border: 1px solid var(--flux-border, rgba(94, 200, 255, 0.14));
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+  border-radius: 24px;
   z-index: 1;
   margin: 1rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 280ms ease, border-color 280ms ease,
+    box-shadow 280ms ease;
+  animation: featureIn 650ms ease both;
+
+  &:nth-child(1) {
+    animation-delay: 80ms;
+  }
+  &:nth-child(2) {
+    animation-delay: 160ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 240ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 320ms;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: var(--flux-border-strong, rgba(94, 200, 255, 0.28));
+    box-shadow: 0 18px 48px rgba(59, 158, 255, 0.16);
+  }
+
   @media screen and (max-width: 966px) {
     margin: 10px 0;
   }
   a {
     text-decoration: none;
+    color: inherit;
   }
   img {
     height: 120px;
     width: 120px;
   }
+  svg {
+    color: var(--flux-cyan, #5ec8ff);
+    transition: color 220ms ease, filter 220ms ease;
+  }
+  &:hover svg {
+    color: var(--flux-mint, #00d4a1);
+    filter: drop-shadow(0 0 18px rgba(0, 212, 161, 0.35));
+  }
 }
 
 .features {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  align-items: stretch;
+  padding: 0.5rem 0 2rem;
   width: 100%;
-  //margin-top: -140px;
-  margin: -140px auto 0;
+  margin: -100px auto 0;
   @media screen and (max-width: 966px) {
-    margin: 10px 0;
+    margin: 0.5rem 0 0;
+    padding-top: 0.5rem;
+    flex-direction: column;
   }
 }
 
 .hero.hero--primary {
-  background-color: #00b5e2;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mainDescription {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.15rem;
   width: 62%;
+  max-width: 720px;
   margin: auto;
-  color: #606060;
-  padding-bottom: 6rem;
+  color: var(--flux-text-muted, #9aa8c0);
+  padding-bottom: 5rem;
+  line-height: 1.7;
+  animation: fadeUp 700ms ease 280ms both;
+
+  div {
+    margin-top: 1rem;
+    color: var(--flux-text-dim, #6b7a94);
+  }
 }
 
-.fluxnovaCapabilities {
-  width: 95%;
-  display: block;
-  margin: auto;
-  padding: 50px;
+.capabilitiesSection {
+  padding: 1rem 1.25rem 5rem;
+}
+
+.capabilitiesInner {
+  width: min(100%, 1080px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.capabilitiesTitle {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 650;
+  color: var(--flux-text, #e8eef8);
+}
+
+.capabilitiesGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.capabilityItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  min-height: 140px;
+  padding: 1.35rem 1rem;
+  border-radius: 18px;
+  background: linear-gradient(
+    165deg,
+    rgba(20, 28, 46, 0.95) 0%,
+    rgba(14, 21, 36, 0.98) 100%
+  );
+  border: 1px solid var(--flux-border, rgba(94, 200, 255, 0.14));
+  transition: transform 200ms ease, border-color 200ms ease,
+    box-shadow 200ms ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--flux-border-strong, rgba(94, 200, 255, 0.28));
+    box-shadow: 0 12px 28px rgba(59, 158, 255, 0.12);
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 12px rgba(59, 158, 255, 0.28));
+  }
+
+  span {
+    font-size: 1.05rem;
+    font-weight: 650;
+    line-height: 1.25;
+    color: var(--flux-text, #e8eef8);
+    letter-spacing: 0.01em;
+  }
 }
 
 .featureWrapper {

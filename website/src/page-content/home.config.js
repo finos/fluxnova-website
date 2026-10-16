@@ -6,7 +6,6 @@ import EngineIcon from "/img/icons/engine.svg";
 import APIIcon from "/img/icons/api.svg";
 import MonitoringIcon from "/img/icons/monitoring.svg";
 import styles from "../pages/styles.module.scss";
-import Link from "@docusaurus/Link";
 
 export const HomeConfig = {
   heroSection: {
@@ -19,9 +18,10 @@ export const HomeConfig = {
       />,
       <p className="hero--subtitle">AUTOMATE, ORCHESTRATE, and ACCELERATE</p>,
       <p className="fluxnova-description">
-        Fluxnova is a new opensource BPM platform which aims to provide
-        automation and orchestration capabilities to accelerate the digitization
-        of end to end process or workflow across the organization.
+        Fluxnova is an open-source BPM platform that delivers automation and
+        orchestration capabilities to accelerate end-to-end digitization of
+        processes and workflows across the organization. Designed for regulated
+        organizations, it serves the financial services industry and beyond.
       </p>,
     ],
   },
@@ -62,51 +62,15 @@ export const HomeConfig = {
       />,
     ],
   },
-  mainContent: {
-    className: "vertical-flex side-padding-only",
-    elements: [
-      <div className={classnames(styles.buttonsWrapper)}>
-        <div className={classnames(styles.buttons)}>
-          <button className="primary">
-            <Link to="https://docs.fluxnova.finos.org">Get Started</Link>
-          </button>
-          <button className="secondary">
-            <Link to="https://github.com/finos/fluxnova-bpm-platform/discussions">
-              Join the Community
-            </Link>
-          </button>
-        </div>
-      </div>,
-      <div>
-        <img
-          className={classnames(styles.fluxnovaCapabilities)}
-          src="/img/fluxnova/fluxnova-capabilities-icons.png"
-          alt="icons representing the capabilities of Fluxnova"
-        />
-        ,
-      </div>,
-      <div className={classnames(styles.mainDescription)}>
-        Backed by FINOS/Linux Foundation, Fluxnova empowers digitization through
-        process orchestration, helping organizations to increase straight
-        through processing (STP) by automating complex processes involving
-        multiple endpoints via BPM workflows.
-        <div>
-          Fluxnova is opensource and available under the Apache 2.0 licence,
-          compliant with OSI standards.
-        </div>
-      </div>,
-    ],
-  },
-  buttons: [
-    {
-      name: <>Get Started</>,
-      url: "https://docs.fluxnova.finos.org",
-      style: classnames("primary"),
-    },
-    {
-      name: <>Join the Community</>,
-      url: "https://github.com/finos/fluxnova-bpm-platform/discussions",
-      style: classnames("secondary"),
-    },
+  capabilities: [
+    { iconName: "monitoring", label: "Monitoring" },
+    { iconName: "insights", label: "Insights" },
+    { iconName: "rules", label: "Rules" },
+    { iconName: "people-talking", label: "User Task" },
+    { iconName: "paper-airplane", label: "Communication" },
+    { iconName: "data-tree", label: "APIs" },
+    { iconName: "clipboard", label: "Low Code" },
+    { iconName: "nucleus", label: "Collaboration" },
+    { iconName: "data-cloud", label: "Integrations" },
   ],
 };

@@ -12,18 +12,18 @@ export const faqsConfig = {
     },
     elements: [
       <h1>FAQs</h1>,
-      <h2 className="lightWeight">
+      <p className="page-lead">
         You have questions, we have answers! Please take a moment to verify if
         your questions have already been addressed. If they have not, feel free
         to reach out to us.
-      </h2>,
+      </p>,
     ],
   },
   sectionThree: {
     className: "bg-white color-charcoal display-block",
 
     elements: [
-      <h2 className="lightWeight">About Fluxnova</h2>,
+      <h2 className="section-heading">About Fluxnova</h2>,
       <h3>What is Fluxnova?</h3>,
       <p>
         Fluxnova is a process orchestration tool that helps organisations design
@@ -76,7 +76,7 @@ export const faqsConfig = {
         </a>
       </p>,
 
-      <h2 className="lightWeight paddingTop">Migration & Compatibility</h2>,
+      <h2 className="section-heading paddingTop">Migration & Compatibility</h2>,
       <h3>Can I migrate from Camunda 7 to Fluxnova?</h3>,
       <p>
         Yes. Fluxnova includes a migration utility that automates much of the
@@ -109,7 +109,7 @@ export const faqsConfig = {
         compatibility throughout the transition.
       </p>,
 
-      <h2 className="lightWeight paddingTop">Technology & Deployment</h2>,
+      <h2 className="section-heading paddingTop">Technology & Deployment</h2>,
       <h3>Where can I deploy Fluxnova?</h3>,
       <p>
         Fluxnova runs as an embedded engine inside a Spring Boot microservice,
@@ -120,7 +120,7 @@ export const faqsConfig = {
       <h3>Which Java version does Fluxnova require?</h3>,
       <p>Fluxnova requires Java 21.</p>,
 
-      <h2 className="lightWeight paddingTop">Tools & Features</h2>,
+      <h2 className="section-heading paddingTop">Tools & Features</h2>,
       <h3>Does Fluxnova include modelling and monitoring tools?</h3>,
       <p>
         Yes. Fluxnova includes a Modeler for BPMN and DMN design and a front-end
@@ -133,7 +133,7 @@ export const faqsConfig = {
         platforms to meet reporting and insight needs.
       </p>,
 
-      <h2 className="lightWeight paddingTop">Support & Ecosystem</h2>,
+      <h2 className="section-heading paddingTop">Support & Ecosystem</h2>,
       <h3>How is Fluxnova supported?</h3>,
       <p>
         Fluxnova is backed by a growing open-source community under FINOS. For
@@ -167,7 +167,7 @@ export const faqsConfig = {
         <a href="/contribute">Contribute now</a>
       </p>,
 
-      <h2 className="lightWeight paddingTop">Ideas & Future</h2>,
+      <h2 className="section-heading paddingTop">Ideas & Future</h2>,
       <h3>What’s next for Fluxnova?</h3>,
       <p>
         The project roadmap is community-driven and focuses on continuous

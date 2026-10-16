@@ -28,7 +28,7 @@ export const modelerConfig = {
       ),
     },
     elements: [
-      <h2>
+      <h2 className="section-heading">
         Built for clarity and collaboration, helping business users and
         developers define logic together
       </h2>,
@@ -37,13 +37,11 @@ export const modelerConfig = {
         automations, Fluxnova Modeler gives you the tools to move from idea to
         execution with confidence
       </p>,
-      <div style={{ textAlign: "center" }}>
-        <button className="primary">
-          <Link to="https://github.com/finos/fluxnova-modeler/releases">
-            Learn More
-          </Link>
-        </button>
-      </div>,
+      <button className="primary">
+        <Link to="https://github.com/finos/fluxnova-modeler/releases">
+          Learn More
+        </Link>
+      </button>,
     ],
   },
   sectionTwo: {

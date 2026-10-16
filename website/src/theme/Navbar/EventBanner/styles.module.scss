@@ -1,26 +1,28 @@
 .navbarEventBanner {
   text-align: center;
-  background: #515151;
-  color: white;
+  background: linear-gradient(90deg, #0a1f38 0%, #123050 50%, #0a1f38 100%);
+  color: var(--flux-text, #e8eef8);
   font-weight: 600;
+  border-bottom: 1px solid var(--flux-border, rgba(94, 200, 255, 0.14));
+  letter-spacing: 0.02em;
 }
 
 .navbarEventBanner a:link {
-  color: rgb(120, 194, 255);
+  color: var(--flux-cyan, #5ec8ff);
   text-decoration: none;
 }
 
 .navbarEventBanner a:hover {
-  color: rgb(162, 213, 254);
+  color: var(--flux-mint, #00d4a1);
   text-decoration: none;
 }
 
 .navbarEventBanner a:visited {
-  color: rgb(120, 194, 255);
+  color: var(--flux-cyan, #5ec8ff);
   text-decoration: none;
 }
 
 .navbarEventBanner a:visited:hover {
-  color: rgb(162, 213, 254);
+  color: var(--flux-mint, #00d4a1);
   text-decoration: none;
 }

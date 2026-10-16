@@ -31,7 +31,7 @@ export const MonitoringConfig = {
     },
     elements: [
       <p>DASHBOARD</p>,
-      <h2>Need Answers Fast? Just Click the Chart.</h2>,
+      <h2 className="section-heading">Need Answers Fast? Just Click the Chart.</h2>,
       <p>
         Our intuitive dashboards show you what’s happening across your
         operations—instantly. From incident counts to running process instances,
@@ -50,7 +50,7 @@ export const MonitoringConfig = {
     },
     elements: [
       <p>LISTS</p>,
-      <h2>Segmented Views</h2>,
+      <h2 className="section-heading">Segmented Views</h2>,
       <p>
         Fluxnova Control Center's list pages give you quick access to essential data--organized
         by:
@@ -73,7 +73,7 @@ export const MonitoringConfig = {
     },
     elements: [
       <p>INSIGHTS</p>,
-      <h2>Smarter Monitoring Starts Here</h2>,
+      <h2 className="section-heading">Smarter Monitoring Starts Here</h2>,
       <p>
         Fluxnova Control Center Monitoring gives you the power to both analyze and resolve
         process issues. Identify bottlenecks and incidents at a glance with

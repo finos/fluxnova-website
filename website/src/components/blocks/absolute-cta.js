@@ -6,15 +6,18 @@ import styles from "./styles.module.scss";
 
 export default function AbsoluteCta({ config }) {
   return (
-    <div
+    <section
       className={classnames(
         generateClassName(config?.className),
         styles.absoluteCtaWrapper,
       )}
-      style={{ display: "block" }}
     >
-      {generateElements(config.elements)}
-      {config.button}
-    </div>
+      <div className="page-section__inner page-section__inner--cta">
+        <div className="page-copy">{generateElements(config.elements)}</div>
+        {config.button && (
+          <div className="page-cta-action">{config.button}</div>
+        )}
+      </div>
+    </section>
   );
 }

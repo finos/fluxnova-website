@@ -7,6 +7,13 @@
 }
 
 .navBorderBottom {
-  background-color: white;
-  height: 5px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(59, 158, 255, 0.45) 25%,
+    rgba(0, 212, 161, 0.55) 50%,
+    rgba(59, 158, 255, 0.45) 75%,
+    transparent 100%
+  );
+  height: 2px;
 }

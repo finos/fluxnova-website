@@ -12,10 +12,10 @@ export const contributeConfig = {
     },
     elements: [
       <h1>Ways to Contribute</h1>,
-      <h2 className="lightWeight">
+      <p className="page-lead">
         We’re excited you’re here and want to contribute to Fluxnova! This guide
         outlines how you can contribute effectively and collaboratively.
-      </h2>,
+      </p>,
     ],
   },
   sectionThree: {
@@ -134,7 +134,7 @@ export const contributeConfig = {
         </li>
       </ul>,
 
-      <h2 className="lightWeight paddingTop">Browse our issues</h2>,
+      <h2 className="section-heading paddingTop">Browse our issues</h2>,
       <p>
         We manage issues for the multiple Fluxnova projects through our Project
         Board. You can find the full list of FINOS hosted Fluxnova projects{" "}
@@ -189,7 +189,7 @@ export const contributeConfig = {
         </li>
       </ul>,
 
-      <h2 className="lightWeight paddingTop">More...</h2>,
+      <h2 className="section-heading paddingTop">More...</h2>,
       <h3>More details are available in these areas:</h3>,
       <ul>
         <li>Building Fluxnova BPM Platform Locally</li>

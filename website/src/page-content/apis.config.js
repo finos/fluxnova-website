@@ -31,20 +31,18 @@ export const APIsConfig = {
       ),
     },
     elements: [
-      <h2>
+      <h2 className="section-heading">
         Fluxnova provides a modern, secure API layer to support seamless
         integration and operational transparency.
       </h2>,
-      <h2 className="lightWeight">
+      <p>
         Fluxnova APIs make it easy to connect business workflows to your
         existing digital landscape, enabling true end to end automation
-      </h2>,
+      </p>,
       <h3>Get started by visiting our REST API documentation</h3>,
-      <div style={{ textAlign: "center" }}>
-        <button className="primary">
-          <Link to="/docs/category/api-spec">API Spec</Link>
-        </button>
-      </div>,
+      <button className="primary">
+        <Link to="/docs/category/api-spec">API Spec</Link>
+      </button>,
     ],
   },
   sectionTwo: {
@@ -79,7 +77,7 @@ export const APIsConfig = {
   sectionThree: {
     className: "bg-white color-gray display-block",
     elements: [
-      <h2 className="lightWeight">API Examples</h2>,
+      <h2 className="section-heading">API Examples</h2>,
       <h3 className="color-black">Start a Process Instance</h3>,
       <h4 className="primary-color">Endpoint:</h4>,
       <p className="code-text">

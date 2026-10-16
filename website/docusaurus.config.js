@@ -28,13 +28,19 @@ module.exports = {
     repoUrl: `https://github.com/finos/${projectSlug}`,
   },
   scripts: ['https://buttons.github.io/buttons.js'],
-  stylesheets: ['https://fonts.googleapis.com/css?family=Overpass:400,400i,700'],
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap',
+  ],
   headTags: [
     { tagName: 'link', attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" } },
-    { tagName: 'link', attributes: { rel: "preconnect", href: "https://fonts.gstatic.com" } },
-    { tagName: 'link', attributes: { href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap", rel: "stylesheet" } }
+    { tagName: 'link', attributes: { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous" } },
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       logo: {
         alt: 'Fluxnova Logo',
