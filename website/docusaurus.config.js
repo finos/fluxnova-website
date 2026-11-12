@@ -27,6 +27,11 @@ module.exports = {
   customFields: {
     repoUrl: `https://github.com/finos/${projectSlug}`,
   },
+  markdown: {
+    hooks: {
+        onBrokenMarkdownLinks: 'throw',
+    },
+  },
   scripts: ['https://buttons.github.io/buttons.js'],
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap',
